@@ -53,7 +53,7 @@ Your reviews depend on cleanliness. If you or your guest spot anything that isn'
 ## 5. About Mioara
 **H2:** Hi, I'm Mioara
 
-I've been working in cleaning for over 10 years, and I've held a permanent contract with the same household for more than 10 years. That means I'm reliable and people trust me.
+I've been working in cleaning for over 10 years, all of them on a permanent contract with the same company, cleaning both offices and a private home. That means I'm reliable and people trust me.
 
 I live in la Ribera and know the area well. I treat your apartment like my own home: clean, checked and ready for a 5-star review.
 

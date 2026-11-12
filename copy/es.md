@@ -53,7 +53,7 @@ Tus reseñas dependen de la limpieza. Si tú o tu huésped veis algo que no est�
 ## 5. Sobre Mioara
 **H2:** Soy Mioara
 
-Llevo más de 10 años trabajando en limpieza, y más de 10 años con contrato fijo en la misma casa. Eso quiere decir que soy constante y que confían en mí.
+Llevo más de 10 años trabajando en limpieza, siempre con contrato fijo en la misma empresa, donde limpio tanto oficinas como una vivienda particular. Eso quiere decir que soy constante y que confían en mí.
 
 Vivo en la Ribera y conozco la zona. Trato tu piso como si fuera mi casa: lo dejo limpio, revisado y listo para que tu huésped te deje 5 estrellas.
 
@@ -114,6 +114,3 @@ Trabajo con pocos pisos para poder cuidar cada uno, así que tengo plazas limita
 > Hola Mioara, he visto tu web. Tengo un apartamento turístico en ___ y me interesa la limpieza entre huéspedes.
 
 ---
-
-## 🟡 Para validar
-1. **"Más de 10 años con contrato fijo en la misma casa":** ¿es una casa particular o una empresa? Cambia la frase de "Sobre Mioara".
