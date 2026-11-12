@@ -76,7 +76,7 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
 
 ## Fases
 1. Base: nombre, oferta y zona. ✅ Hecho, salvo validar las 18 áreas y resolver el titular.
-2. Copy ✅ Hecho (v1 en `copy/`), salvo factura y aviso legal (dependen del titular). Secciones:
+2. Copy ✅ Hecho (v1 en `copy/`), sin pregunta de factura por ahora (decisión de Ysst); aviso legal pendiente del titular. Secciones:
    * Hero con titular y WhatsApp.
    * Servicios.
    * Cómo funciona.

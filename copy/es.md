@@ -94,9 +94,6 @@ Al terminar te mando fotos por WhatsApp. Y si algo no queda bien, lo repito grat
 **¿Haces limpiezas a fondo?**
 Sí: al empezar o acabar la temporada y por mudanza.
 
-**¿Me das factura?**
-🟡 Pendiente del titular legal. Propuesta cuando esté resuelto: "Sí, te hago factura de cada servicio."
-
 ---
 
 ## 8. Contacto

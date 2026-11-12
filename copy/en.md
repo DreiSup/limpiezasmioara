@@ -92,9 +92,6 @@ I send you photos on WhatsApp when I'm done. And if anything isn't right, I'll r
 **Do you do deep cleans?**
 Yes: at the start or end of the season, and for move-ins or move-outs.
 
-**Can you give me an invoice?**
-🟡 Pending legal owner. Proposed once resolved: "Yes, I invoice every service."
-
 ---
 
 ## 8. Contact
