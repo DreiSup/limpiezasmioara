@@ -15,7 +15,7 @@
 
 **Botón:** Escríbeme por WhatsApp
 
-**Microtexto bajo el botón:** Te respondo yo, Mioara. Sin compromiso.
+**Microtexto bajo el botón:** Te respondo yo, Mioara. Sin compromiso. Plazas limitadas.
 
 ---
 
@@ -86,7 +86,7 @@ No. Lo ideal es una caja de llaves o una cerradura con código, así puedo entra
 Puedes ponerlos tú o los llevo yo con un pequeño suplemento.
 
 **¿Qué horario tienes?**
-Entre semana por la tarde y los fines de semana por la mañana. Organizo las limpiezas por zona para llegar siempre a tiempo.
+Dime tus horarios de salida y entrada y lo miramos. Organizo las limpiezas por zona para llegar siempre a tiempo.
 
 **¿Cómo sé que ha quedado bien?**
 Al terminar te mando fotos por WhatsApp. Y si algo no queda bien, lo repito gratis.
@@ -102,7 +102,7 @@ Sí: al empezar o acabar la temporada y por mudanza.
 ## 8. Contacto
 **H2:** ¿Hablamos?
 
-Cuéntame dónde está tu piso y te digo precio y disponibilidad.
+Trabajo con pocos pisos para poder cuidar cada uno, así que tengo plazas limitadas. Cuéntame dónde está tu piso y te digo precio y disponibilidad.
 
 **Botón:** Escríbeme por WhatsApp
 
@@ -116,7 +116,4 @@ Cuéntame dónde está tu piso y te digo precio y disponibilidad.
 ---
 
 ## 🟡 Para validar
-1. **Horario en la FAQ:** las salidas suelen ser a las 11 y las entradas a las 15–16. Con limpiezas entre semana a partir de las 15:30, algunos anfitriones no podrán contratar. ¿Lo mostramos tal cual, lo dejamos vago ("dime tus horarios y lo miramos") o lo quitamos?
-2. **Capacidad (2 pisos por semana):** no la he puesto. ¿Añadimos "plazas limitadas" como gancho, o nada?
-3. **"Vivo en la Ribera":** ¿es correcto? Si no, lo cambio.
-4. **"La misma casa":** ¿es una casa particular o una empresa? He puesto "casa".
+1. **"Más de 10 años con contrato fijo en la misma casa":** ¿es una casa particular o una empresa? Cambia la frase de "Sobre Mioara".

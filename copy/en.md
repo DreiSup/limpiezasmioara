@@ -15,7 +15,7 @@
 
 **Button:** Message me on WhatsApp
 
-**Microcopy:** You'll talk to me directly, Mioara. No commitment.
+**Microcopy:** You'll talk to me directly, Mioara. No commitment. Limited spots.
 
 ---
 
@@ -84,7 +84,7 @@ No. A key box or smart lock works best, so I can get in as soon as the guest lea
 You can, or I can bring them for a small extra fee.
 
 **When are you available?**
-Weekday afternoons and weekend mornings. I group cleans by area so I'm always on time.
+Tell me your check-out and check-in times and we'll work it out. I group cleans by area so I'm always on time.
 
 **How do I know it's been done properly?**
 I send you photos on WhatsApp when I'm done. And if anything isn't right, I'll redo it for free.
@@ -100,7 +100,7 @@ Yes: at the start or end of the season, and for move-ins or move-outs.
 ## 8. Contact
 **H2:** Let's talk
 
-Tell me where your apartment is and I'll send you a price and my availability.
+I work with only a few apartments so I can look after each one properly, so spots are limited. Tell me where your apartment is and I'll send you a price and my availability.
 
 **Button:** Message me on WhatsApp
 
