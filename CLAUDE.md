@@ -76,7 +76,7 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
 
 ## Fases
 1. Base: nombre, oferta y zona. ✅ Hecho, salvo validar las 18 áreas y resolver el titular.
-2. Copy ⏭️ Siguiente. Secciones:
+2. Copy ✅ Hecho (v1 en `copy/`), salvo factura y aviso legal (dependen del titular). Secciones:
    * Hero con titular y WhatsApp.
    * Servicios.
    * Cómo funciona.
@@ -85,15 +85,15 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
    * Zonas.
    * Preguntas frecuentes.
    * Contacto.
-3. Diseño: estructura y estilo visual.
+3. Diseño ⏭️ En curso: varias propuestas con Claude Design (prompt en `design/prompt-claude-design.md`), Ysst elige una.
 4. Construcción: SEO local (schema LocalBusiness/CleaningService) y medición/consentimiento.
 5. Google Business: negocio de área de servicio sin dirección pública, categorías, fotos, verificación (normalmente por vídeo) y primeras reseñas.
 
 ## Pendiente de decidir (consultar a Ysst)
-* Stack: ¿usar el monorepo kit de Ysst (Next.js + shadcn) o algo más ligero para una sola página?
+* ~~Stack~~ → Decidido: **Astro + Tailwind** (estático, i18n ES/EN).
 * Hosting y despliegue.
 * Número de WhatsApp y mensaje prellenado.
 * Fotos: ¿reales de Mioara y trabajos hechos, o genéricas al principio?
 * Medición: Consent Mode, GTM o nada en la v1.
-* Idiomas: ¿solo castellano o también inglés para anfitriones extranjeros?
+* ~~Idiomas~~ → Decidido: castellano e inglés. Copy en `copy/es.md` y `copy/en.md`.
 * Titular legal y fecha de publicación.
