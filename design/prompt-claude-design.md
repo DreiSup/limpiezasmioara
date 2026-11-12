@@ -117,6 +117,7 @@ Al terminar te mando fotos por WhatsApp. Y si algo no queda bien, lo repito grat
 Sí: al empezar o acabar la temporada y por mudanza.
 
 **¿Me das factura?**
+Sí, te hago factura de cada servicio.
 
 ---
 
