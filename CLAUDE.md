@@ -97,3 +97,11 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
 * Medición: Consent Mode, GTM o nada en la v1.
 * ~~Idiomas~~ → Decidido: castellano e inglés. Copy en `copy/es.md` y `copy/en.md`.
 * Titular legal y fecha de publicación.
+
+## Documentos del proyecto
+* `copy/es.md`, `copy/en.md`: copy v1 de la web.
+* `design/prompt-claude-design.md`: prompt para generar propuestas de diseño.
+* `research/captacion-leads.md`: canales de captación y accionables.
+* `research/seo-geo-aeo.md`: investigación SEO/GEO/AEO y decisiones pendientes.
+* `research/facturacion.md`: opciones legales para facturar (recomendación provisional: Mioara autónoma; validar con gestoría).
+* `docs/seo-instrucciones-build.md`: instrucciones SEO obligatorias para el agente que construya la web en Astro.
