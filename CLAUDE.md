@@ -85,7 +85,7 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
    * Zonas.
    * Preguntas frecuentes.
    * Contacto.
-3. Diseño ⏭️ En curso: varias propuestas con Claude Design (prompt en `design/prompt-claude-design.md`), Ysst elige una.
+3. Diseño ✅ Elegido: dirección A «Cuaderno cercano». Referencia visual en `design/referencia.html` e instrucciones en `design/HANDOFF.md`.
 4. Construcción: SEO local (schema LocalBusiness/CleaningService) y medición/consentimiento.
 5. Google Business: negocio de área de servicio sin dirección pública, categorías, fotos, verificación (normalmente por vídeo) y primeras reseñas.
 
@@ -105,4 +105,5 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
 * `research/seo-geo-aeo.md`: investigación SEO/GEO/AEO y decisiones pendientes.
 * `research/facturacion.md`: opciones legales para facturar (recomendación provisional: Mioara autónoma; validar con gestoría).
 * `research/informe-seo.html`: informe SEO visual (HTML autocontenido).
+* `design/referencia.html`, `design/HANDOFF.md`: diseño elegido (fuente de verdad visual) e instrucciones de implementación.
 * `docs/seo-instrucciones-build.md`: instrucciones SEO obligatorias para el agente que construya la web en Astro.
