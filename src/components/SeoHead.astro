@@ -1,0 +1,37 @@
+---
+// Etiquetas SEO del <head>. Todas las URL absolutas salen de Astro.site (astro.config).
+import { alternates, type Dict } from '../i18n';
+import { buildSchema } from '../lib/schema';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+const site = Astro.site!;
+const abs = (path: string) => new URL(path, site).href;
+const canonical = abs(t.path);
+const schema = buildSchema(t, site);
+// Previews/staging: PUBLIC_NOINDEX=true → noindex. En producción no debe existir.
+const noindex = import.meta.env.PUBLIC_NOINDEX === 'true';
+// TODO(og-image): cuando haya imagen OG (1200×630, JPG <300 KB en public/og/og-es.jpg y og-en.jpg),
+// añadir og:image (+ width, height, alt), twitter:image y cambiar twitter:card a summary_large_image.
+---
+<title>{t.seo.title}</title>
+<meta name="description" content={t.seo.description} />
+<link rel="canonical" href={canonical} />
+{alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={abs(a.path)} />)}
+<meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'} />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Limpiezas Mioara" />
+<meta property="og:locale" content={t.ogLocale} />
+<meta property="og:locale:alternate" content={t.ogLocaleAlternate} />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={t.seo.title} />
+<meta property="og:description" content={t.seo.description} />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={t.seo.title} />
+<meta name="twitter:description" content={t.seo.description} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

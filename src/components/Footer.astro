@@ -1,0 +1,19 @@
+---
+import type { Dict } from '../i18n';
+import LangSwitch from './LangSwitch.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+---
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <span class="serif text-[21px] text-ink">{t.footer.businessName}</span>
+    <!-- TODO(legal): crear las páginas de Aviso legal y Política de privacidad cuando haya titular (nombre y NIF). -->
+    <nav aria-label={t.footer.legalNavLabel} class="ftr-links">
+      {t.footer.legal.map((l) => <a href={l.href}>{l.label}</a>)}
+    </nav>
+    <LangSwitch t={t} variant="footer" />
+  </div>
+</footer>

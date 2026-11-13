@@ -1,0 +1,39 @@
+---
+// Página completa (one-page) para un idioma.
+import Base from '../layouts/Base.astro';
+import type { Dict } from '../i18n';
+import Header from './Header.astro';
+import Hero from './Hero.astro';
+import Wave from './Wave.astro';
+import Services from './Services.astro';
+import Steps from './Steps.astro';
+import Guarantee from './Guarantee.astro';
+import About from './About.astro';
+import Zones from './Zones.astro';
+import Faq from './Faq.astro';
+import Contact from './Contact.astro';
+import Footer from './Footer.astro';
+import StickyBar from './StickyBar.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+---
+<Base t={t}>
+  <Header t={t} />
+  <main id="main">
+    <Hero t={t} />
+    <Wave />
+    <Services t={t} />
+    <Steps t={t} />
+    <Guarantee t={t} />
+    <About t={t} />
+    <Zones t={t} />
+    <Wave flip />
+    <Faq t={t} />
+    <Contact t={t} />
+  </main>
+  <Footer t={t} />
+  <StickyBar t={t} />
+</Base>

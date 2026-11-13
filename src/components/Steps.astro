@@ -1,0 +1,23 @@
+---
+import type { Dict } from '../i18n';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+// Círculos a mano alrededor de los números (alternos), paths literales de la referencia.
+const circles = [
+  'M14 30c-3-11 7-21 18-19 10 2 15 11 11 21-4 9-18 12-25 5-4-4-5-10-2-15 3-5 9-7 14-6',
+  'M42 24c2 10-5 20-16 20-10 0-17-8-15-17 2-9 12-15 21-12 7 2 10 8 9 14',
+];
+---
+<section id={t.ids.steps} class="sec pt-[12px]" aria-labelledby="h-steps">
+  <div class="wrap flex flex-col gap-[26px]">
+    <h2 id="h-steps" class="serif h2 reveal">{t.steps.h2}</h2>
+    <ol class="steps">
+      {t.steps.items.map((step, i) => (
+        <li class="reveal"><span aria-hidden="true" class="hand num">{i + 1}<svg viewBox="0 0 56 56" fill="none"><path class="draw" pathLength="1" d={circles[i % 2]} stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></span><p><strong class="font-[700]">{step.title}</strong> {step.text}</p></li>
+      ))}
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+import type { Dict } from '../i18n';
+import Tape from './Tape.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+const g = t.guarantee;
+---
+<section id={t.ids.guarantee} aria-labelledby="h-guar" class="pt-[8px] px-[0] pb-[56px]">
+  <div class="wrap px-[26px]">
+    <div class="guar reveal">
+      <div class="guar-card">
+        <h2 id="h-guar" class="serif h2 guar-h">{g.h2Before}<span class="circled">{g.h2Circled}<svg aria-hidden="true" viewBox="0 0 120 56" preserveAspectRatio="none" fill="none" class="text-pen"><path class="draw" pathLength="1" d="M20 40C4 30 10 10 50 7c40-3 66 6 64 22-2 17-46 24-80 17C14 42 8 30 26 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path></svg></span></h2>
+        <p class="m-[0]">{g.text}</p>
+      </div>
+      <Tape class="top-[-10px] left-[-14px] w-[86px] [transform:rotate(-32deg)]" />
+      <Tape class="bottom-[-6px] right-[-12px] w-[76px] [transform:rotate(-28deg)]" />
+    </div>
+  </div>
+</section>

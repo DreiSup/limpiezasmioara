@@ -1,0 +1,15 @@
+---
+// Barra fija inferior con WhatsApp (solo <1024 px). Respeta env(safe-area-inset-bottom).
+import type { Dict } from '../i18n';
+import WhatsAppButton from './WhatsAppButton.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+---
+<div class="sticky">
+  <div class="torn">
+    <WhatsAppButton t={t} idle iconSize={20} />
+  </div>
+</div>

@@ -1,0 +1,10 @@
+---
+// Destello decorativo (anima en bucle si no se pide reducir movimiento).
+interface Props {
+  class?: string;
+  size?: number;
+  stroke?: string;
+}
+const { class: className, size = 34, stroke = 'currentColor' } = Astro.props;
+---
+<svg class:list={['twinkle', className]} aria-hidden="true" width={size} height={size} viewBox="0 0 34 34" fill="none"><path d="M17 3v8M17 23v8M3 17h8M23 17h8M8 8l4 4M22 22l4 4" stroke={stroke} stroke-width="1.8" stroke-linecap="round"></path></svg>

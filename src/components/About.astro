@@ -1,0 +1,29 @@
+---
+import type { Dict } from '../i18n';
+import Polaroid from './Polaroid.astro';
+import PhotoPlaceholder from './PhotoPlaceholder.astro';
+import Tape from './Tape.astro';
+import Twinkle from './Twinkle.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+const a = t.about;
+---
+<section id={t.ids.about} class="sec about-bg" aria-labelledby="h-about">
+  <div class="wrap about">
+    <div class="about-photo reveal">
+      <Polaroid class="pb-[50px] [transform:rotate(-2.5deg)]">
+        <PhotoPlaceholder label={a.photo.label} title={a.photo.title} spec={a.photo.spec} class="aspect-[4/5] p-[14px]" />
+      </Polaroid>
+      <Tape class="top-[-12px] left-1/2 w-[96px] [transform:translateX(-50%)_rotate(3deg)]" />
+      <Twinkle class="absolute bottom-[30px] left-[-22px] [animation-delay:1.2s] text-pen" />
+    </div>
+    <div class="about-text">
+      <h2 id="h-about" class="serif h2 reveal text-[clamp(32px,4vw,48px)] leading-[1.1]">{a.h2Before}<span class="hand text-[1.3em] font-[700] text-pen">{a.h2Name}</span></h2>
+      <p class="reveal">{a.p1Before} <span class="mark mark-scroll">{a.p1Mark}</span></p>
+      <p class="reveal">{a.p2}</p>
+    </div>
+  </div>
+</section>

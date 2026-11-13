@@ -1,0 +1,19 @@
+---
+import type { Dict } from '../i18n';
+import LangSwitch from './LangSwitch.astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+---
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href={t.path} class="hand logo">Mioara</a>
+    <div class="hdr-right">
+      <LangSwitch t={t} />
+      <WhatsAppButton t={t} class="hdr-cta" iconSize={20} />
+    </div>
+  </div>
+</header>

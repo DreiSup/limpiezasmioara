@@ -1,0 +1,33 @@
+---
+import { Font } from 'astro:assets';
+import SeoHead from '../components/SeoHead.astro';
+import type { Dict } from '../i18n';
+import '../styles/global.css';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+---
+<!doctype html>
+<html lang={t.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <SeoHead t={t} />
+    <!-- Precarga solo lo crítico (por encima del pliegue): Figtree 400 (cuerpo) y Young Serif (H1). -->
+    <Font cssVariable="--font-figtree" preload={[{ weight: 400 }]} />
+    <Font cssVariable="--font-young-serif" preload />
+    <Font cssVariable="--font-kalam" />
+    <!-- TODO(favicon): favicon provisional («M» en el azul de la marca). Sustituir por el definitivo
+         y añadir /favicon.ico (48×48) y /apple-touch-icon.png (180×180). -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#F6F1E6" />
+  </head>
+  <body>
+    <div class="m">
+      <a class="skip" href="#main">{t.skipLink}</a>
+      <slot />
+    </div>
+  </body>
+</html>

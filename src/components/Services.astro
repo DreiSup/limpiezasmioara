@@ -1,0 +1,28 @@
+---
+import type { Dict } from '../i18n';
+import Checkbox from './Checkbox.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+const s = t.services;
+---
+<section id={t.ids.services} class="sec" aria-labelledby="h-serv">
+  <div class="wrap split">
+    <div class="split-side">
+      <h2 id="h-serv" class="serif h2 reveal">{s.h2}</h2>
+      <div class="side-note reveal">
+        <svg aria-hidden="true" width="30" height="28" viewBox="0 0 30 28" fill="none" class="flex-none text-pen"><path d="M26 24C14 24 7 17 6 5M2 10l4-6 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <p class="hand note text-[19px]">{s.note}</p>
+      </div>
+    </div>
+    <div class="split-main page reveal">
+      <ul class="checklist">
+        {s.items.map((item, i) => (
+          <li><Checkbox variant={(i % 2) as 0 | 1} /><span><strong class="font-[700]">{item.title}</strong> {item.text}</span></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+---
+// Cinta adhesiva. La posición y el giro llegan por `class` (utilidades arbitrarias de Tailwind).
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+<div class:list={['tape', className]}></div>

@@ -1,0 +1,11 @@
+---
+// Ola separadora (se dibuja al hacer scroll). Paths literales de la referencia.
+interface Props {
+  flip?: boolean;
+}
+const { flip = false } = Astro.props;
+const d = flip
+  ? 'M8 12C40 22 70 2 104 12S168 22 200 12 264 2 296 12 360 22 392 12'
+  : 'M8 12C40 2 70 22 104 12S168 2 200 12 264 22 296 12 360 2 392 12';
+---
+<svg class="wave" aria-hidden="true" viewBox="0 0 400 24" preserveAspectRatio="none" fill="none"><path class="draw" pathLength="1" vector-effect="non-scaling-stroke" d={d} stroke="#C9BB9A" stroke-width="2" stroke-linecap="round"></path></svg>

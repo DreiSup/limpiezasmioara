@@ -1,0 +1,8 @@
+---
+// Marco tipo polaroid. El contenido (marcador o <Picture>) va en el slot.
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+<div class:list={['pol', className]}><slot /></div>

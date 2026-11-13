@@ -1,0 +1,22 @@
+---
+// FAQ con <details> nativo (0 JS). Cada pregunta es un H3 dentro del summary (SEO).
+// El mismo array alimenta el FAQPage del JSON-LD (src/lib/schema.ts).
+import type { Dict } from '../i18n';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+---
+<section id={t.ids.faq} class="sec" aria-labelledby="h-faq">
+  <div class="wrap split">
+    <div class="split-side">
+      <h2 id="h-faq" class="serif h2 reveal">{t.faq.h2}</h2>
+    </div>
+    <div class="split-main faq reveal">
+      {t.faq.items.map((item, i) => (
+        <details open={i === 0}><summary><h3>{item.q}</h3><span aria-hidden="true" class="hand plus">+</span></summary><p>{item.a}</p></details>
+      ))}
+    </div>
+  </div>
+</section>

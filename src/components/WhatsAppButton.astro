@@ -1,0 +1,21 @@
+---
+// Botón de WhatsApp. variant: solid (azul) | light (papel). idle: brillo periódico (barra fija).
+import { whatsappUrl } from '../config';
+import type { Dict } from '../i18n';
+import WhatsAppIcon from './WhatsAppIcon.astro';
+
+interface Props {
+  t: Dict;
+  variant?: 'solid' | 'light';
+  idle?: boolean;
+  iconSize?: number;
+  class?: string;
+}
+const { t, variant = 'solid', idle = false, iconSize = 22, class: className } = Astro.props;
+---
+<a
+  href={whatsappUrl(t.whatsappMessage)}
+  target="_blank"
+  rel="noopener"
+  class:list={['btn', { light: variant === 'light', idle }, className]}
+><WhatsAppIcon size={iconSize} />{t.cta}</a>

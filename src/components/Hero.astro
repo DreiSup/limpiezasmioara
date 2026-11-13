@@ -1,0 +1,36 @@
+---
+import type { Dict } from '../i18n';
+import WhatsAppButton from './WhatsAppButton.astro';
+import Polaroid from './Polaroid.astro';
+import PhotoPlaceholder from './PhotoPlaceholder.astro';
+import Tape from './Tape.astro';
+import Twinkle from './Twinkle.astro';
+
+interface Props {
+  t: Dict;
+}
+const { t } = Astro.props;
+const h = t.hero;
+---
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="h-hero" class="serif h1 fade-up">{h.h1Before}<span class="mark mark-in">{h.h1Mark}</span></h1>
+      <p class="lead fade-up [animation-delay:.15s]">{h.lead} <span class="wavy">{h.leadWavy}</span></p>
+      <div class="cta-block fade-up [animation-delay:.3s]">
+        <WhatsAppButton t={t} />
+        <div class="cta-note">
+          <svg aria-hidden="true" width="34" height="30" viewBox="0 0 34 30" fill="none" class="flex-none mt-[-2px] text-pen"><path d="M30 26C18 26 9 20 7 6M3 11l4-6 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <p class="hand note">{h.note}</p>
+        </div>
+      </div>
+    </div>
+    <div class="pol-wrap">
+      <Polaroid class="drop [transform:rotate(2.5deg)]">
+        <PhotoPlaceholder label={h.photo.label} title={h.photo.title} spec={h.photo.spec} class="aspect-[4/3]" />
+      </Polaroid>
+      <Tape class="top-[-12px] left-1/2 w-[104px] [transform:translateX(-50%)_rotate(-4deg)]" />
+      <Twinkle class="absolute top-[-22px] right-[-14px] text-pen" />
+    </div>
+  </div>
+</section>
