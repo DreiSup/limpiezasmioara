@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Informe SEO · Limpiezas Mioara</title>
+<meta name="description" content="Informe visual de la investigación SEO, SEO local y GEO/AEO para Limpiezas Mioara (12 de noviembre de 2026).">
+<style>
+/* Layout: columna de lectura de ~70ch con figuras que se ensanchan hasta 1120px; bandas por sección, sin tarjetas por defecto. */
+:root {
+  --bg: #f3f6f6;
+  --surface: #ffffff;
+  --sunken: #e8eeef;
+  --ink: #12232a;
+  --muted: #4a5d64;
+  --line: #cfdadc;
+  --accent: #0a6b70;
+  --accent-ink: #ffffff;
+  --accent-soft: #dcefee;
+  --legal: #a8321f;
+  --legal-soft: #fbe6e1;
+  --ok: #2c6a37;
+  --ok-soft: #e2f0e3;
+  --mid: #8a5a00;
+  --mid-soft: #f8ecd2;
+  --spec: #6b5d74;
+  --spec-soft: #ece7ef;
+  --m-antes: #4b57c9;
+  --m-durante: #0a6b70;
+  --m-prepub: #9a5a00;
+  --m-despues: #9b3474;
+  --chip-ink: #ffffff;
+  --code-bg: #e9eff0;
+  --f-display: "Avenir Next", "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  --f-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1a1d; --surface: #16252a; --sunken: #1c2e34; --ink: #e4eef0; --muted: #a3b6bb; --line: #2f4850;
+    --accent: #5fc4c6; --accent-ink: #062224; --accent-soft: #173c40;
+    --legal: #f29a87; --legal-soft: #3d2420; --ok: #8fd19a; --ok-soft: #1c3622; --mid: #e8bb68; --mid-soft: #3a2e17;
+    --spec: #c7b6d2; --spec-soft: #2c2533;
+    --m-antes: #9ea7f5; --m-durante: #5fc4c6; --m-prepub: #e8bb68; --m-despues: #ea92c6; --chip-ink: #0d1719;
+    --code-bg: #1c2e34; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1a1d; --surface: #16252a; --sunken: #1c2e34; --ink: #e4eef0; --muted: #a3b6bb; --line: #2f4850;
+  --accent: #5fc4c6; --accent-ink: #062224; --accent-soft: #173c40;
+  --legal: #f29a87; --legal-soft: #3d2420; --ok: #8fd19a; --ok-soft: #1c3622; --mid: #e8bb68; --mid-soft: #3a2e17;
+  --spec: #c7b6d2; --spec-soft: #2c2533;
+  --m-antes: #9ea7f5; --m-durante: #5fc4c6; --m-prepub: #e8bb68; --m-despues: #ea92c6; --chip-ink: #0d1719;
+  --code-bg: #1c2e34; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+code { font-family: var(--f-mono); font-size: .88em; background: var(--code-bg); padding: .08em .35em; border-radius: 4px; overflow-wrap: anywhere; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; letter-spacing: -.01em; }
+h2 { font-size: clamp(1.45rem, 3vw, 1.9rem); font-weight: 700; }
+h3 { font-size: 1.08rem; font-weight: 650; }
+p { margin: 0; }
+.wrap { max-width: 1120px; margin: 0 auto; }
+.prose { max-width: 70ch; }
+.eyebrow { font: 600 .75rem/1.3 var(--f-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: .875rem; }
+
+/* Cabecera */
+.masthead { padding-block: 48px 28px; display: grid; gap: 16px; border-bottom: 1px solid var(--line); }
+.masthead .lede { font-size: 1.12rem; max-width: 62ch; color: var(--muted); }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: .875rem; color: var(--muted); }
+.meta-row b { color: var(--ink); font-weight: 600; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; padding: 0; list-style: none; }
+.toc a { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--ink); font-size: .875rem; background: var(--surface); }
+.toc a:hover { border-color: var(--accent); color: var(--accent); }
+
+section.band { padding-block: 48px 8px; display: grid; gap: 20px; scroll-margin-top: 12px; }
+.sec-head { display: grid; gap: 8px; }
+.sec-head .num { font: 700 .8rem/1 var(--f-mono); color: var(--accent); letter-spacing: .04em; }
+.takeaway { font-family: var(--f-display); font-size: 1.05rem; font-weight: 600; color: var(--ink); }
+
+/* Resumen */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 18px 20px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.card .k { font: 700 .72rem/1 var(--f-mono); color: var(--accent); letter-spacing: .05em; text-transform: uppercase; }
+.card h3 { font-size: 1.05rem; }
+.card p { color: var(--muted); font-size: .95rem; }
+
+/* Figuras */
+figure { margin: 0; display: grid; gap: 10px; min-width: 0; }
+figcaption { font-size: .875rem; color: var(--muted); max-width: 80ch; }
+.fig-title { font-family: var(--f-display); font-weight: 650; font-size: 1.05rem; }
+.scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.scroller svg { display: block; }
+.swipe { display: none; font-size: .8rem; color: var(--muted); }
+@media (max-width: 760px) { .swipe { display: block; } }
+
+/* SVG */
+svg text { font-family: var(--f-body); }
+.sv-band { fill: var(--sunken); }
+.sv-bandlbl { fill: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.sv-node { fill: var(--surface); stroke: var(--line); stroke-width: 1.2; }
+.sv-node.key { stroke: var(--accent); stroke-width: 1.6; }
+.sv-node.legal { stroke: var(--legal); stroke-width: 1.6; stroke-dasharray: 5 3; }
+.sv-node.lang { stroke: var(--m-despues); stroke-width: 1.6; stroke-dasharray: 6 3; }
+.sv-term { fill: var(--accent); }
+.sv-term-t { fill: var(--accent-ink); font-weight: 700; font-size: 15px; }
+.sv-term-s { fill: var(--accent-ink); font-size: 12px; }
+.sv-t { fill: var(--ink); font-size: 13px; font-weight: 650; }
+.sv-s { fill: var(--muted); font-size: 11px; }
+.sv-sl { fill: var(--legal); font-size: 11px; font-weight: 600; }
+.sv-code { fill: var(--ink); font-family: var(--f-mono); font-size: 11.5px; }
+.sv-edge { fill: none; stroke: var(--muted); stroke-width: 1.4; }
+.sv-edge.obs { stroke: var(--mid); stroke-dasharray: 6 4; stroke-width: 1.6; }
+.sv-edge.acc { stroke: var(--accent); stroke-width: 1.8; }
+.sv-arrow { fill: var(--muted); }
+.sv-arrow-acc { fill: var(--accent); }
+.sv-arrow-obs { fill: var(--mid); }
+.sv-lbl { fill: var(--muted); font-size: 11px; font-style: italic; paint-order: stroke; stroke: var(--surface); stroke-width: 4px; stroke-linejoin: round; }
+.sv-lbl-obs { fill: var(--mid); font-size: 11px; font-weight: 600; paint-order: stroke; stroke: var(--surface); stroke-width: 4px; }
+.sv-sect { fill: var(--muted); font-size: 10.5px; font-weight: 700; letter-spacing: .06em; }
+.sv-ok { fill: var(--ok); font-size: 11.5px; }
+.sv-pend { fill: var(--legal); font-size: 11.5px; }
+.sv-no { fill: var(--muted); font-size: 11.5px; text-decoration: line-through; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: .84rem; color: var(--muted); align-items: center; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.lg-line { width: 28px; height: 0; border-top: 2px solid var(--muted); display: inline-block; }
+.lg-line.obs { border-top: 2px dashed var(--mid); }
+.lg-box { width: 18px; height: 12px; border: 2px solid var(--line); border-radius: 3px; display: inline-block; }
+.lg-box.legal { border: 2px dashed var(--legal); }
+.lg-box.lang { border: 2px dashed var(--m-despues); }
+.lg-box.key { border-color: var(--accent); }
+
+/* Recorrido */
+.journey { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; counter-reset: step; }
+.step { position: relative; padding: 0 14px 0 0; display: grid; gap: 10px; align-content: start; }
+.step .bubble { display: flex; align-items: center; gap: 10px; }
+.step .n { width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 700 .95rem var(--f-mono); flex: none; }
+.step .bar { flex: 1; height: 2px; background: var(--line); }
+.step:last-child .bar { display: none; }
+.step h3 { font-size: 1rem; }
+.step p { font-size: .9rem; color: var(--muted); }
+.step.optional .n { background: var(--surface); color: var(--accent); border: 2px dashed var(--accent); }
+.props { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; list-style: none; }
+.props li { font-size: .78rem; line-height: 1.3; padding: 4px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--ink); }
+.props li.legal { background: var(--legal-soft); }
+.props li.legal::before { content: "Titular · "; font-weight: 700; color: var(--legal); }
+@media (max-width: 860px) {
+  .journey { grid-template-columns: 1fr; gap: 0; }
+  .step { grid-template-columns: 34px 1fr; column-gap: 14px; padding: 0 0 22px 0; }
+  .step .bubble { grid-row: 1 / span 3; flex-direction: column; align-self: stretch; }
+  .step .bar { width: 2px; height: auto; flex: 1; }
+  .step > :not(.bubble) { grid-column: 2; }
+}
+
+.kw { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 12px; }
+.kw div { border-left: 3px solid var(--line); padding: 4px 0 4px 12px; min-width: 0; }
+.kw div.top { border-left-color: var(--accent); }
+.kw b { display: block; font-size: .9rem; }
+.kw span { font-size: .84rem; color: var(--muted); }
+
+/* Matriz */
+.matrix-wrap { overflow-x: auto; }
+.matrix { display: grid; grid-template-columns: 44px repeat(6, minmax(48px, 1fr)); min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); overflow: hidden; }
+.matrix .hd { font-size: .74rem; font-weight: 650; color: var(--muted); padding: 8px 4px; text-align: center; background: var(--sunken); border-bottom: 1px solid var(--line); line-height: 1.2; display: flex; align-items: flex-end; justify-content: center; hyphens: auto; }
+.matrix .rh { font: 700 .85rem var(--f-mono); color: var(--ink); background: var(--sunken); display: grid; place-items: center; border-right: 1px solid var(--line); }
+.matrix .cell { min-height: 64px; padding: 8px 4px; display: flex; flex-wrap: wrap; gap: 6px; align-content: center; justify-content: center; border-left: 1px dashed var(--line); border-top: 1px dashed var(--line); }
+.matrix .cell.hot { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); }
+.chip { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 700 .78rem var(--f-mono); color: var(--chip-ink); border: 0; cursor: pointer; position: relative; padding: 0; }
+.chip.t-si { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--legal); }
+.chip.t-parcial { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px color-mix(in srgb, var(--legal) 50%, transparent); }
+.chip.dim { opacity: .18; }
+.m-antes { background: var(--m-antes); }
+.m-durante { background: var(--m-durante); }
+.m-prepub { background: var(--m-prepub); }
+.m-despues { background: var(--m-despues); }
+.dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
+.ring { width: 14px; height: 14px; border-radius: 50%; display: inline-block; background: var(--muted); box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--legal); margin: 0 3px; }
+
+/* Filtros y tabla */
+.filters { display: grid; gap: 10px; }
+.fgroup { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.fgroup .lab { font-size: .8rem; font-weight: 650; color: var(--muted); min-width: 78px; }
+.fbtn { font: inherit; font-size: .84rem; padding: 6px 12px; min-height: 36px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.fbtn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.count { font-size: .85rem; color: var(--muted); }
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.tbl-actions { min-width: 900px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); background: var(--sunken); position: sticky; top: 0; }
+tbody tr:last-child td { border-bottom: 0; }
+td.n { font: 700 .9rem var(--f-mono); font-variant-numeric: tabular-nums; }
+td .why { color: var(--muted); }
+tr.flash td { background: var(--accent-soft); transition: background .6s; }
+.pill { display: inline-block; font-size: .76rem; font-weight: 650; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.p0 { background: var(--ink); color: var(--bg); }
+.pill.p1 { background: var(--sunken); color: var(--ink); border: 1px solid var(--line); }
+.pill.p2, .pill.p3 { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.pill.tsi { background: var(--legal-soft); color: var(--legal); }
+.pill.tno { color: var(--muted); }
+.mom { display: inline-flex; align-items: center; gap: 6px; }
+.mom i { flex: none; }
+.mom i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+/* Timeline */
+.timeline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; position: relative; }
+.lane { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--c); border-radius: 10px; padding: 14px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.lane h3 { font-size: .98rem; }
+.lane .when { font-size: .8rem; color: var(--muted); }
+.lane ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+.lane li { font-size: .86rem; display: grid; grid-template-columns: 30px 1fr; gap: 8px; align-items: start; }
+.lane li .no { font: 700 .74rem var(--f-mono); color: var(--chip-ink); background: var(--c); border-radius: 6px; text-align: center; padding: 2px 0; }
+.lane li.gate { grid-template-columns: 1fr; background: var(--legal-soft); border: 1px dashed var(--legal); border-radius: 8px; padding: 8px 10px; color: var(--ink); }
+.lane li.gate b { color: var(--legal); }
+.lane li.seq .no { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+@media (max-width: 900px) { .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .timeline { grid-template-columns: 1fr; } }
+
+/* Técnico */
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 20px; align-items: start; }
+pre code { background: none; padding: 0; font-size: 1em; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.mom { white-space: normal; }
+pre { margin: 0; font: .8rem/1.55 var(--f-mono); background: var(--code-bg); border-radius: 8px; padding: 14px; overflow-x: auto; color: var(--ink); }
+.files { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 10px; }
+.file { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; min-width: 0; }
+.file code { background: none; padding: 0; font-weight: 700; font-size: .85rem; }
+.file span { font-size: .84rem; color: var(--muted); }
+.file.opt { border-style: dashed; }
+
+/* Evidencia */
+.evidence { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.ev { padding: 16px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.ev + .ev { border-left: 1px solid var(--line); }
+.ev-h { display: grid; gap: 4px; padding-bottom: 10px; border-bottom: 3px solid var(--c); }
+.ev-h h3 { color: var(--c); }
+.ev-h span { font-size: .8rem; color: var(--muted); }
+.ev ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.ev li { font-size: .88rem; display: grid; gap: 3px; }
+.ev li b { font-weight: 650; }
+.ev li span { color: var(--muted); }
+.ev li .do { color: var(--ink); font-size: .84rem; }
+.ev li .do::before { content: "→ "; color: var(--c); font-weight: 700; }
+@media (max-width: 860px) { .evidence { grid-template-columns: 1fr; } .ev + .ev { border-left: 0; border-top: 1px solid var(--line); } }
+.scale { display: grid; grid-template-columns: repeat(3, 1fr); height: 10px; border-radius: 999px; overflow: hidden; }
+.scale i:nth-child(1) { background: var(--ok); }
+.scale i:nth-child(2) { background: var(--mid); }
+.scale i:nth-child(3) { background: var(--spec); }
+
+.bars { display: grid; gap: 8px; }
+.barrow { display: grid; grid-template-columns: 120px 1fr 48px; gap: 10px; align-items: center; font-size: .86rem; }
+.barrow .track { height: 14px; background: var(--sunken); border-radius: 3px; position: relative; }
+.barrow .fill { position: absolute; inset: 0 auto 0 0; background: var(--mid); border-radius: 3px; }
+.barrow .v { font-variant-numeric: tabular-nums; color: var(--muted); text-align: right; }
+
+.bots { min-width: 760px; }
+.bots td:first-child { font-family: var(--f-mono); font-weight: 650; white-space: nowrap; }
+.yes { color: var(--ok); font-weight: 650; }
+.blk { color: var(--legal); font-weight: 650; }
+.note-box { background: var(--mid-soft); border: 1px solid color-mix(in srgb, var(--mid) 45%, transparent); border-radius: 10px; padding: 12px 14px; font-size: .9rem; }
+.note-box b { color: var(--ink); }
+
+/* Decisiones */
+.dgroups { display: grid; gap: 28px; }
+.dgroup { display: grid; gap: 12px; }
+.dgroup-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.dgroup-h h3 { font-size: 1.1rem; }
+.dgroup-h .tag { font-size: .76rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+.tag.now { background: var(--accent); color: var(--accent-ink); }
+.tag.build { background: var(--sunken); color: var(--ink); border: 1px solid var(--line); }
+.tag.pub { background: var(--legal-soft); color: var(--legal); }
+.dcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 14px; }
+.dcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.dcard .id { font: 700 .8rem var(--f-mono); color: var(--accent); }
+.dcard ol, .dcard ul { margin: 0; padding-left: 1.2em; font-size: .88rem; display: grid; gap: 3px; }
+.dcard .rec { font-size: .88rem; border-top: 1px solid var(--line); padding-top: 8px; }
+.dcard .rec b { color: var(--accent); }
+.dcard .def { font-size: .8rem; color: var(--muted); }
+.dcard.blocker { border-color: var(--legal); }
+.dcard.blocker .id { color: var(--legal); }
+
+/* Glosario */
+dl.gloss { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px 28px; margin: 0; }
+dl.gloss div { min-width: 0; border-top: 1px solid var(--line); padding-top: 8px; }
+dl.gloss dt { font-weight: 700; font-family: var(--f-display); }
+dl.gloss dd { margin: 2px 0 0; font-size: .9rem; color: var(--muted); }
+
+.sources { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 18px 28px; }
+.sources div { min-width: 0; }
+.sources h3 { font-size: .92rem; margin-bottom: 6px; }
+.sources ul { margin: 0; padding-left: 1.1em; font-size: .86rem; display: grid; gap: 4px; }
+.sources a { overflow-wrap: anywhere; }
+
+footer.end { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Investigación · Fase 4 (construcción)</p>
+  <h1>Informe SEO · Limpiezas Mioara</h1>
+  <p class="lede">SEO local, otros buscadores y visibilidad en asistentes de IA (GEO/AEO) para la web de una página de Mioara. Resume <code>research/seo-geo-aeo.md</code> y <code>docs/seo-instrucciones-build.md</code>; no añade datos nuevos.</p>
+  <div class="meta-row">
+    <span>Investigación a <b>12 nov 2026</b></span>
+    <span><b>22</b> accionables</span>
+    <span><b>13</b> decisiones pendientes</span>
+    <span>Volúmenes de búsqueda: <b>no verificados</b></span>
+  </div>
+  <nav aria-label="Índice">
+    <ul class="toc">
+      <li><a href="#resumen">Resumen</a></li>
+      <li><a href="#mapa">Mapa del sistema</a></li>
+      <li><a href="#recorrido">Recorrido</a></li>
+      <li><a href="#accionables">Accionables</a></li>
+      <li><a href="#tecnico">Estructura técnica</a></li>
+      <li><a href="#geo">SEO vs GEO/AEO</a></li>
+      <li><a href="#decisiones">Decisiones</a></li>
+      <li><a href="#glosario">Glosario</a></li>
+      <li><a href="#fuentes">Fuentes</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- 1 -->
+<section class="band" id="resumen" aria-labelledby="h-resumen">
+  <div class="sec-head">
+    <span class="num">01</span>
+    <h2 id="h-resumen">Resumen en 30 segundos</h2>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <span class="k">Lo primero</span>
+      <h3>Ganar la búsqueda de marca</h3>
+      <p>El anfitrión recibe un mensaje firmado por Mioara y la busca por su nombre. Ganar "Limpiezas Mioara" con la web, el perfil de Google y 2–3 perfiles coherentes es barato y casi seguro. Las búsquedas genéricas las dominan Cronoshare y Habitissimo.</p>
+    </article>
+    <article class="card">
+      <span class="k">En lo local manda</span>
+      <h3>Google Business Profile, y depende del titular</h3>
+      <p>Sin GBP verificado (normalmente por vídeo) y con reseñas no hay posición en el mapa. Verificar puede exigir pruebas del negocio, así que el titular legal es el cuello de botella.</p>
+    </article>
+    <article class="card">
+      <span class="k">Estructura</span>
+      <h3>Una página por idioma: <code>/</code> y <code>/en/</code></h3>
+      <p>Las páginas por pueblo en plantilla son <em>doorway pages</em>. Más adelante, 2–3 páginas de zona solo con contenido real. Schema: <code>LocalBusiness</code> (<code>CleaningService</code> no existe), sin dirección.</p>
+    </article>
+    <article class="card">
+      <span class="k">IA</span>
+      <h3>GEO es, sobre todo, buen SEO + Bing</h3>
+      <p>Google (mayo 2026): optimizar para AI Overviews "sigue siendo SEO". Para ChatGPT, Copilot y Perplexity: no bloquear sus bots de búsqueda, estar en Bing y tener reseñas y menciones coherentes. <code>llms.txt</code>: sin pruebas de efecto.</p>
+    </article>
+    <article class="card">
+      <span class="k">Medición</span>
+      <h3>Search Console + Bing WMT bastan para empezar</h3>
+      <p>Sin cookies ni banner. Si se quieren contar clics en WhatsApp, analítica sin cookies. GA4 con Consent Mode es desproporcionado para una página. El texto prellenado de WhatsApp ya identifica la procedencia.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="band" id="mapa" aria-labelledby="h-mapa">
+  <div class="sec-head">
+    <span class="num">02</span>
+    <h2 id="h-mapa">Mapa del sistema</h2>
+    <p class="prose muted">De izquierda a derecha: lo que publicas, el índice que lo recoge y dónde lo ve el anfitrión. Cada franja es un ecosistema.</p>
+  </div>
+  <figure>
+    <p class="fig-title">La web alimenta cuatro ecosistemas; Bing sostiene a Copilot, a buscadores menores y, según análisis externos, a ChatGPT</p>
+    <p class="swipe">Desliza el diagrama en horizontal →</p>
+    <div class="scroller" role="region" aria-label="Diagrama del sistema de visibilidad" tabindex="0">
+      <svg viewBox="0 0 1100 600" width="1100" height="600" role="img" aria-labelledby="map-t map-d" style="min-width:900px;width:100%;height:auto">
+        <title id="map-t">Mapa del sistema de visibilidad</title>
+        <desc id="map-d">La web, el perfil de Google Business, Bing Places, Apple Business y las reseñas y citas llegan a los índices de Google, Bing, Apple Maps y de los bots de IA, que alimentan Google Búsqueda, AI Overviews, Copilot, ChatGPT, Perplexity, Siri y otros, hasta que el anfitrión encuentra a Mioara.</desc>
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sv-arrow"/></marker>
+          <marker id="ar-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sv-arrow-acc"/></marker>
+          <marker id="ar-obs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sv-arrow-obs"/></marker>
+        </defs>
+        <!-- column headers -->
+        <text x="20" y="24" class="sv-sect">LO QUE PUBLICAS</text>
+        <text x="360" y="24" class="sv-sect">ÍNDICE O MAPA</text>
+        <text x="620" y="24" class="sv-sect">DÓNDE LO VE EL ANFITRIÓN</text>
+        <!-- bands -->
+        <rect x="8" y="34" width="870" height="128" rx="8" class="sv-band"/>
+        <rect x="8" y="170" width="870" height="124" rx="8" class="sv-band"/>
+        <rect x="8" y="302" width="870" height="86" rx="8" class="sv-band"/>
+        <rect x="8" y="396" width="870" height="104" rx="8" class="sv-band"/>
+        <text x="318" y="154" class="sv-bandlbl" text-anchor="middle">GOOGLE</text>
+        <text x="318" y="286" class="sv-bandlbl" text-anchor="middle">BING</text>
+        <text x="318" y="380" class="sv-bandlbl" text-anchor="middle">APPLE</text>
+        <text x="318" y="492" class="sv-bandlbl" text-anchor="middle">BOTS DE IA</text>
+
+        <!-- edges (behind nodes) -->
+        <!-- Google band -->
+        <path d="M290,66 C325,66 325,98 358,98" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M290,128 C325,128 325,110 358,110" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,98 C590,98 590,76 618,76" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,110 C590,110 590,126 618,126" class="sv-edge" marker-end="url(#ar)"/>
+        <!-- GBP -> Bing Places import -->
+        <path d="M150,150 L150,184" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="158" y="172" class="sv-lbl">se importa</text>
+        <!-- Bing band -->
+        <path d="M290,208 C325,208 325,228 358,228" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M290,262 C325,262 325,240 358,240" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,228 C590,228 590,206 618,206" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,240 C590,240 590,256 618,256" class="sv-edge" marker-end="url(#ar)"/>
+        <!-- Bing -> ChatGPT observed -->
+        <path d="M520,258 C520,330 590,330 590,380 C590,410 600,428 618,428" class="sv-edge obs" marker-end="url(#ar-obs)"/>
+        <text x="544" y="300" class="sv-lbl-obs">observado</text>
+        <!-- Apple band -->
+        <path d="M290,344 L358,344" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,344 L618,344" class="sv-edge" marker-end="url(#ar)"/>
+        <!-- AI band -->
+        <path d="M290,446 L358,446" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,440 C590,440 590,428 618,428" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M560,452 C590,452 590,470 618,470" class="sv-edge" marker-end="url(#ar)"/>
+        <!-- third parties up arrows -->
+        <path d="M460,514 L460,482" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M740,514 L740,492" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="472" y="506" class="sv-lbl">las rastrean Google, Bing y los bots de IA</text>
+        <!-- bus to terminal -->
+        <path d="M860,76 H886 M860,126 H886 M860,206 H886 M860,256 H886 M860,344 H886 M860,428 H886 M860,470 H886" class="sv-edge acc"/>
+        <path d="M886,76 V470" class="sv-edge acc"/>
+        <path d="M886,268 H906" class="sv-edge acc" marker-end="url(#ar-acc)"/>
+
+        <!-- nodes: publish column -->
+        <rect x="20" y="44" width="270" height="44" rx="7" class="sv-node key"/>
+        <text x="32" y="62" class="sv-t">Web · <tspan font-family="ui-monospace, monospace" font-size="12">/</tspan> y <tspan font-family="ui-monospace, monospace" font-size="12">/en/</tspan></text>
+        <text x="32" y="78" class="sv-s">Search Console · sitemap · informe de IA</text>
+        <rect x="20" y="106" width="270" height="44" rx="7" class="sv-node legal"/>
+        <text x="32" y="124" class="sv-t">Google Business Profile</text>
+        <text x="32" y="140" class="sv-sl">Área de servicio sin dirección · titular</text>
+
+        <rect x="20" y="186" width="270" height="44" rx="7" class="sv-node legal"/>
+        <text x="32" y="204" class="sv-t">Bing Places</text>
+        <text x="32" y="220" class="sv-sl">Importa el GBP ya verificado</text>
+        <rect x="20" y="240" width="270" height="44" rx="7" class="sv-node key"/>
+        <text x="32" y="258" class="sv-t">Web</text>
+        <text x="32" y="274" class="sv-s">Bing Webmaster Tools · IndexNow</text>
+
+        <rect x="20" y="322" width="270" height="44" rx="7" class="sv-node legal"/>
+        <text x="32" y="340" class="sv-t">Apple Business</text>
+        <text x="32" y="356" class="sv-sl">¿Admite sin dirección? Por comprobar</text>
+
+        <rect x="20" y="424" width="270" height="44" rx="7" class="sv-node key"/>
+        <text x="32" y="442" class="sv-t">Web</text>
+        <text x="32" y="458" class="sv-s">robots.txt permite bots de búsqueda</text>
+
+        <!-- index column -->
+        <rect x="360" y="80" width="200" height="48" rx="7" class="sv-node"/>
+        <text x="372" y="100" class="sv-t">Índice de Google + Maps</text>
+        <text x="372" y="117" class="sv-s">Aquí avisa Search Console</text>
+        <rect x="360" y="210" width="200" height="48" rx="7" class="sv-node"/>
+        <text x="372" y="230" class="sv-t">Índice de Bing</text>
+        <text x="372" y="247" class="sv-s">IndexNow avisa aquí, no a Google</text>
+        <rect x="360" y="322" width="200" height="44" rx="7" class="sv-node"/>
+        <text x="372" y="349" class="sv-t">Apple Maps</text>
+        <rect x="360" y="414" width="200" height="66" rx="7" class="sv-node"/>
+        <text x="372" y="433" class="sv-t">Índices de IA propios</text>
+        <text x="372" y="450" class="sv-s">OAI-SearchBot · Claude-SearchBot</text>
+        <text x="372" y="465" class="sv-s">PerplexityBot</text>
+
+        <!-- surfaces -->
+        <rect x="620" y="56" width="240" height="40" rx="7" class="sv-node"/>
+        <text x="632" y="81" class="sv-t">Búsqueda y Maps de Google</text>
+        <rect x="620" y="104" width="240" height="44" rx="7" class="sv-node"/>
+        <text x="632" y="122" class="sv-t">AI Overviews y Modo IA</text>
+        <text x="632" y="138" class="sv-s">"Sigue siendo SEO" (Google)</text>
+        <rect x="620" y="184" width="240" height="44" rx="7" class="sv-node"/>
+        <text x="632" y="202" class="sv-t">Copilot</text>
+        <text x="632" y="218" class="sv-s">Citas medidas en Bing WMT</text>
+        <rect x="620" y="236" width="240" height="40" rx="7" class="sv-node"/>
+        <text x="632" y="261" class="sv-t">DuckDuckGo, Ecosia, Yahoo</text>
+        <rect x="620" y="324" width="240" height="40" rx="7" class="sv-node"/>
+        <text x="632" y="349" class="sv-t">Siri y Apple Maps</text>
+        <rect x="620" y="408" width="240" height="40" rx="7" class="sv-node"/>
+        <text x="632" y="433" class="sv-t">ChatGPT (búsqueda)</text>
+        <rect x="620" y="454" width="240" height="34" rx="7" class="sv-node"/>
+        <text x="632" y="476" class="sv-t">Perplexity, Claude</text>
+
+        <!-- third parties -->
+        <rect x="20" y="516" width="840" height="64" rx="7" class="sv-node legal"/>
+        <text x="32" y="538" class="sv-t">Reseñas en el GBP y citas coherentes (mismo nombre y teléfono, sin dirección)</text>
+        <text x="32" y="556" class="sv-s">WhatsApp Business · Cronoshare · Habitissimo · Páginas Amarillas · QDQ · (opcional) Facebook, Instagram, Foursquare</text>
+        <text x="32" y="572" class="sv-sl">Pesan en el mapa y en la visibilidad en IA · algunos directorios piden datos fiscales</text>
+
+        <!-- terminal -->
+        <rect x="908" y="44" width="180" height="448" rx="10" class="sv-term"/>
+        <text x="998" y="236" text-anchor="middle" class="sv-term-t">El anfitrión</text>
+        <text x="998" y="256" text-anchor="middle" class="sv-term-t">encuentra</text>
+        <text x="998" y="276" text-anchor="middle" class="sv-term-t">a Mioara</text>
+        <text x="998" y="304" text-anchor="middle" class="sv-term-s">y le escribe</text>
+        <text x="998" y="320" text-anchor="middle" class="sv-term-s">por WhatsApp</text>
+      </svg>
+    </div>
+    <div class="legend">
+      <span><i class="lg-line"></i> Documentado por la plataforma</span>
+      <span><i class="lg-line obs"></i> Observado por análisis externos, no oficial</span>
+      <span><i class="lg-box key"></i> Tu web</span>
+      <span><i class="lg-box legal"></i> Depende del titular legal</span>
+    </div>
+    <figcaption>ChatGPT toma 20–30 resultados de Bing y los reordena (análisis de Search Engine Land), pero no lee Bing Places directamente: su influencia es indirecta. DuckDuckGo usa Bing para resultados y Apple Maps para mapas. Google-Extended no afecta a la Búsqueda ni a AI Overviews.</figcaption>
+  </figure>
+</section>
+
+<!-- 3 -->
+<section class="band" id="recorrido" aria-labelledby="h-recorrido">
+  <div class="sec-head">
+    <span class="num">03</span>
+    <h2 id="h-recorrido">Recorrido del anfitrión</h2>
+    <p class="takeaway prose">Cada paso se apoya en una pieza distinta; si una falla, el anfitrión no llega a WhatsApp.</p>
+  </div>
+  <ol class="journey" style="list-style:none;margin:0;padding:0">
+    <li class="step">
+      <div class="bubble"><span class="n">1</span><span class="bar"></span></div>
+      <h3>Recibe un mensaje en Airbnb</h3>
+      <p>Firmado por Mioara, con el método "Do you know": pregunta si conoce a alguien que necesite limpieza.</p>
+      <ul class="props"><li>Un único nombre de entidad (#1)</li></ul>
+    </li>
+    <li class="step">
+      <div class="bubble"><span class="n">2</span><span class="bar"></span></div>
+      <h3>Busca el nombre</h3>
+      <p>"Limpiezas Mioara", "Mioara limpieza Cullera". Es la búsqueda que más importa.</p>
+      <ul class="props"><li>Title y H1 con la marca (#4)</li><li>JSON-LD LocalBusiness + Person (#5)</li><li>Search Console e indexación (#8)</li></ul>
+    </li>
+    <li class="step">
+      <div class="bubble"><span class="n">3</span><span class="bar"></span></div>
+      <h3>Ve web, ficha y reseñas</h3>
+      <p>Visita típica: unos 30 segundos desde el móvil. Busca algo serio y coherente.</p>
+      <ul class="props"><li class="legal">Ficha GBP verificada (#7)</li><li class="legal">Reseñas reales (#9)</li><li>Fotos reales (#16)</li><li>Web rápida, Core Web Vitals (#12)</li><li class="legal">Citas coherentes (#14)</li></ul>
+    </li>
+    <li class="step optional">
+      <div class="bubble"><span class="n">4</span><span class="bar"></span></div>
+      <h3>A veces, pregunta a una IA</h3>
+      <p>ChatGPT, Perplexity, Gemini o Copilot. El uso de IA para recomendaciones locales crece (encuesta en EE. UU. y Reino Unido).</p>
+      <ul class="props"><li>Bots de búsqueda permitidos (#11)</li><li>Bing WMT y Bing Places (#10, #13)</li><li>FAQ con respuestas directas</li></ul>
+    </li>
+    <li class="step">
+      <div class="bubble"><span class="n">5</span><span class="bar"></span></div>
+      <h3>Escribe por WhatsApp</h3>
+      <p>CTA principal, sin formulario. El texto prellenado ("he visto tu web") identifica de dónde viene.</p>
+      <ul class="props"><li>Un único teléfono: el de WhatsApp (#2)</li><li>Texto prellenado distinto en web y GBP</li></ul>
+    </li>
+  </ol>
+
+  <figure>
+    <p class="fig-title">Qué escribe el anfitrión: primero la marca, después servicio + zona</p>
+    <div class="kw">
+      <div class="top"><b>Marca (la más importante)</b><span>"Limpiezas Mioara", "Mioara limpieza", "Mioara limpieza Cullera", "Mioara cleaning"</span></div>
+      <div><b>Servicio + zona prioritaria</b><span>"limpieza apartamentos turísticos Cullera", "limpieza Airbnb Cullera", "… El Perelló", "Airbnb cleaning Cullera"</span></div>
+      <div><b>Servicio + València</b><span>"limpieza pisos turísticos Valencia", "changeover cleaning Valencia". Mucha competencia; difícil en orgánico</span></div>
+      <div><b>Genérico y Ribera / Horta Sud</b><span>"limpieza entre huéspedes", "turnover cleaning", "… Alzira", "… Silla". Probablemente poco volumen</span></div>
+    </div>
+    <figcaption>Son candidatas por intención. <strong>No hay volúmenes verificados</strong>: validar con Google Keyword Planner (provincia de Valencia) y, tras publicar, con Search Console y Bing Webmaster Tools.</figcaption>
+  </figure>
+</section>
+
+<!-- 4 -->
+<section class="band" id="accionables" aria-labelledby="h-acc">
+  <div class="sec-head">
+    <span class="num">04</span>
+    <h2 id="h-acc">Accionables</h2>
+    <p class="prose muted">La investigación da prioridad (P0–P3) y esfuerzo, no impacto; la matriz cruza esas dos columnas. Color = momento. Anillo rojo = depende del titular legal. Pulsa un número para verlo en la tabla.</p>
+  </div>
+
+  <figure>
+    <p class="fig-title">9 de los 22 accionables son P0 y casi todos cuestan poco; los caros (GBP, reseñas) dependen del titular</p>
+    <div class="matrix-wrap">
+      <div class="matrix" id="matrix" role="grid" aria-label="Matriz de prioridad y esfuerzo"></div>
+    </div>
+    <div class="legend">
+      <span><i class="dot m-antes"></i> Antes de construir</span>
+      <span><i class="dot m-durante"></i> Durante la construcción</span>
+      <span><i class="dot m-prepub"></i> Antes de publicar</span>
+      <span><i class="dot m-despues"></i> Después de publicar</span>
+      <span><i class="ring"></i> Depende del titular (total o parcial)</span>
+    </div>
+  </figure>
+
+  <figure>
+    <p class="fig-title">Cuándo toca cada cosa: el titular legal es la puerta entre construir y publicar</p>
+    <div class="timeline" id="timeline"></div>
+    <figcaption>Dentro de "Después", el orden importa: GBP verificado → importar a Bing Places → sustituir <code>{{URL_GBP}}</code>, añadir <code>hasMap</code> y <code>sameAs</code>, y volver a desplegar.</figcaption>
+  </figure>
+
+  <div class="filters" aria-label="Filtros de la tabla">
+    <div class="fgroup" data-key="mom"><span class="lab">Momento</span>
+      <button class="fbtn" type="button" data-v="all" aria-pressed="true">Todos</button>
+      <button class="fbtn" type="button" data-v="antes" aria-pressed="false">Antes</button>
+      <button class="fbtn" type="button" data-v="durante" aria-pressed="false">Durante</button>
+      <button class="fbtn" type="button" data-v="prepub" aria-pressed="false">Antes de publicar</button>
+      <button class="fbtn" type="button" data-v="despues" aria-pressed="false">Después</button>
+    </div>
+    <div class="fgroup" data-key="p"><span class="lab">Prioridad</span>
+      <button class="fbtn" type="button" data-v="all" aria-pressed="true">Todas</button>
+      <button class="fbtn" type="button" data-v="P0" aria-pressed="false">P0</button>
+      <button class="fbtn" type="button" data-v="P1" aria-pressed="false">P1</button>
+      <button class="fbtn" type="button" data-v="P2" aria-pressed="false">P2</button>
+      <button class="fbtn" type="button" data-v="P3" aria-pressed="false">P3</button>
+    </div>
+    <div class="fgroup" data-key="tit"><span class="lab">Titular</span>
+      <button class="fbtn" type="button" data-v="all" aria-pressed="true">Todos</button>
+      <button class="fbtn" type="button" data-v="dep" aria-pressed="false">Depende</button>
+      <button class="fbtn" type="button" data-v="no" aria-pressed="false">No depende</button>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+  </div>
+  <div class="tbl-wrap">
+    <table class="tbl-actions">
+      <thead><tr><th style="width:44px">#</th><th style="width:70px">Prior.</th><th style="width:32%">Acción</th><th style="width:26%">Por qué</th><th>Esfuerzo</th><th>Momento</th><th>Titular</th></tr></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="band" id="tecnico" aria-labelledby="h-tec">
+  <div class="sec-head">
+    <span class="num">05</span>
+    <h2 id="h-tec">Estructura técnica</h2>
+    <p class="prose muted">Por defecto (D1): castellano en la raíz, inglés en <code>/en/</code>, barra final siempre y sin redirección por idioma ni IP. Astro: <code>prefixDefaultLocale: false</code>.</p>
+  </div>
+
+  <figure>
+    <p class="fig-title">Dos URLs, cada una canónica de sí misma, enlazadas por el mismo bloque hreflang</p>
+    <p class="swipe">Desliza el diagrama en horizontal →</p>
+    <div class="scroller" role="region" aria-label="Diagrama de URLs e idiomas" tabindex="0">
+      <svg viewBox="0 0 900 300" width="900" height="300" role="img" aria-labelledby="url-t" style="min-width:720px;width:100%;height:auto">
+        <title id="url-t">Estructura de URL: / en castellano y /en/ en inglés, con hreflang recíproco y x-default hacia /</title>
+        <rect x="290" y="14" width="320" height="36" rx="18" class="sv-node key"/>
+        <text x="450" y="37" text-anchor="middle" class="sv-code">https://limpiezasmioara.es</text>
+        <path d="M380,50 C380,70 220,64 220,88" class="sv-edge" marker-end="url(#ar)"/>
+        <path d="M520,50 C520,70 680,64 680,88" class="sv-edge" marker-end="url(#ar)"/>
+
+        <rect x="60" y="90" width="320" height="140" rx="9" class="sv-node key"/>
+        <text x="78" y="116" class="sv-t">/   ·   castellano</text>
+        <text x="78" y="140" class="sv-code">&lt;html lang="es"&gt;</text>
+        <text x="78" y="160" class="sv-code">canonical → /</text>
+        <text x="78" y="180" class="sv-code">og:locale es_ES</text>
+        <text x="78" y="204" class="sv-s">#servicios #como-funciona #garantia</text>
+        <text x="78" y="220" class="sv-s">#sobre-mi #zonas #preguntas #contacto</text>
+
+        <rect x="520" y="90" width="320" height="140" rx="9" class="sv-node key"/>
+        <text x="538" y="116" class="sv-t">/en/   ·   inglés</text>
+        <text x="538" y="140" class="sv-code">&lt;html lang="en"&gt;</text>
+        <text x="538" y="160" class="sv-code">canonical → /en/</text>
+        <text x="538" y="180" class="sv-code">og:locale en_GB</text>
+        <text x="538" y="204" class="sv-s">#services #how-it-works #guarantee</text>
+        <text x="538" y="220" class="sv-s">#about #areas #faq #contact</text>
+
+        <path d="M384,140 H516" class="sv-edge acc" marker-end="url(#ar-acc)"/>
+        <path d="M516,170 H384" class="sv-edge acc" marker-end="url(#ar-acc)"/>
+        <text x="450" y="132" text-anchor="middle" class="sv-lbl">hreflang="en"</text>
+        <text x="450" y="188" text-anchor="middle" class="sv-lbl">hreflang="es"</text>
+        <text x="450" y="210" text-anchor="middle" class="sv-s">recíproco</text>
+
+        <rect x="120" y="254" width="200" height="32" rx="16" class="sv-node"/>
+        <text x="220" y="275" text-anchor="middle" class="sv-code">hreflang="x-default"</text>
+        <path d="M220,254 V234" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="340" y="275" class="sv-s">para quien no es ni es ni en → la raíz</text>
+        <text x="600" y="275" class="sv-s">Nunca canonical de EN a ES</text>
+      </svg>
+    </div>
+  </figure>
+
+  <div class="two">
+    <figure>
+      <p class="fig-title">El bloque de hreflang es idéntico en las dos páginas</p>
+<pre><code>&lt;link rel="canonical" href="https://{{DOMINIO}}/"&gt;   &lt;!-- en /en/: …/en/ --&gt;
+&lt;link rel="alternate" hreflang="es" href="https://{{DOMINIO}}/"&gt;
+&lt;link rel="alternate" hreflang="en" href="https://{{DOMINIO}}/en/"&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://{{DOMINIO}}/"&gt;</code></pre>
+      <figcaption>hreflang solo con idioma (<code>es</code>, <code>en</code>), sin región: los anfitriones angloparlantes vienen de varios países. <code>@astrojs/sitemap</code> genera los alternates entre <code>/</code> y <code>/en/</code>, pero no emite <code>x-default</code>: ese va en el <code>&lt;head&gt;</code>.</figcaption>
+    </figure>
+    <figure>
+      <p class="fig-title">Otras rutas y archivos</p>
+      <div class="files">
+        <div class="file"><code>/aviso-legal/ ↔ /en/legal-notice/</code><span>hreflang en el head, no en el sitemap. ¿Hace falta en EN? (D11)</span></div>
+        <div class="file"><code>/privacidad/ ↔ /en/privacy/</code><span>Necesita el titular y el sistema de medición (D7, D13)</span></div>
+        <div class="file"><code>robots.txt</code><span>Allow general + línea Sitemap. Variante A o B (D5)</span></div>
+        <div class="file"><code>sitemap-index.xml</code><span>Con <code>sitemap-0.xml</code>; la 404 queda fuera</span></div>
+        <div class="file"><code>{{INDEXNOW_KEY}}.txt</code><span>Clave de IndexNow; envío tras cada despliegue</span></div>
+        <div class="file opt"><code>llms.txt</code><span>Opcional (D6). Por defecto, no crearlo</span></div>
+      </div>
+    </figure>
+  </div>
+
+  <figure>
+    <p class="fig-title">Un solo <code>@graph</code>: LocalBusiness en el centro, Mioara como Person y la FAQ colgando de cada página</p>
+    <p class="swipe">Desliza el diagrama en horizontal →</p>
+    <div class="scroller" role="region" aria-label="Diagrama de entidades JSON-LD" tabindex="0">
+      <svg viewBox="0 0 940 500" width="940" height="500" role="img" aria-labelledby="ld-t" style="min-width:780px;width:100%;height:auto">
+        <title id="ld-t">Entidades del JSON-LD: WebSite, LocalBusiness, Person, WebPage, FAQPage, Service y areaServed</title>
+        <!-- edges -->
+        <path d="M250,56 H326" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="288" y="48" text-anchor="middle" class="sv-lbl">publisher</text>
+        <path d="M140,210 V104" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="148" y="162" class="sv-lbl">isPartOf</text>
+        <path d="M250,246 H326" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="288" y="238" text-anchor="middle" class="sv-lbl">about</text>
+        <path d="M140,380 V284" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="148" y="336" class="sv-lbl">isPartOf</text>
+        <path d="M610,52 H686" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="648" y="44" text-anchor="middle" class="sv-lbl">founder</text>
+        <path d="M690,90 H614" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="652" y="106" text-anchor="middle" class="sv-lbl">worksFor</text>
+        <path d="M610,246 H686" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="648" y="238" text-anchor="middle" class="sv-lbl">makesOffer</text>
+        <path d="M610,420 H686" class="sv-edge" marker-end="url(#ar)"/>
+        <text x="648" y="412" text-anchor="middle" class="sv-lbl">areaServed</text>
+
+        <!-- left -->
+        <rect x="30" y="30" width="220" height="72" rx="8" class="sv-node"/>
+        <text x="44" y="52" class="sv-t">WebSite</text>
+        <text x="44" y="70" class="sv-code">#website</text>
+        <text x="44" y="89" class="sv-s">inLanguage: es, en</text>
+        <rect x="30" y="212" width="220" height="70" rx="8" class="sv-node lang"/>
+        <text x="44" y="234" class="sv-t">WebPage</text>
+        <text x="44" y="252" class="sv-code">#webpage · /en/#webpage</text>
+        <text x="44" y="271" class="sv-s">uno por idioma</text>
+        <rect x="30" y="382" width="220" height="88" rx="8" class="sv-node lang"/>
+        <text x="44" y="404" class="sv-t">FAQPage</text>
+        <text x="44" y="422" class="sv-code">#faq · /en/#faq</text>
+        <text x="44" y="441" class="sv-s">Texto idéntico al visible.</text>
+        <text x="44" y="457" class="sv-s">Sin rich result desde mayo 2026</text>
+
+        <!-- center -->
+        <rect x="330" y="30" width="280" height="440" rx="10" class="sv-node key"/>
+        <text x="346" y="54" class="sv-t" font-size="15">LocalBusiness</text>
+        <text x="346" y="72" class="sv-code">#business · mismo @id ES y EN</text>
+        <text x="346" y="100" class="sv-sect">YA DISPONIBLE</text>
+        <text x="346" y="118" class="sv-ok">✓ name: Limpiezas Mioara</text>
+        <text x="346" y="136" class="sv-ok">✓ alternateName: forma larga</text>
+        <text x="346" y="154" class="sv-ok">✓ description · url · telephone</text>
+        <text x="346" y="172" class="sv-ok">✓ image · logo (cuando exista)</text>
+        <text x="346" y="204" class="sv-sect">OMITIR HASTA QUE EXISTA</text>
+        <text x="346" y="222" class="sv-pend">◌ hasMap, sameAs → GBP verificado</text>
+        <text x="346" y="240" class="sv-pend">◌ sameAs → Bing, Apple, Cronoshare</text>
+        <text x="346" y="258" class="sv-pend">◌ legalName, taxID → titular legal</text>
+        <text x="346" y="276" class="sv-pend">◌ knowsLanguage → D4</text>
+        <text x="346" y="308" class="sv-sect">NO PONER</text>
+        <text x="346" y="326" class="sv-no">address (D3: por defecto sin)</text>
+        <text x="346" y="344" class="sv-no">AggregateRating, Review</text>
+        <text x="346" y="362" class="sv-no">@type CleaningService (no existe)</text>
+        <text x="346" y="380" class="sv-no">openingHoursSpecification</text>
+        <text x="346" y="412" class="sv-s">Organization no hace falta:</text>
+        <text x="346" y="428" class="sv-s">LocalBusiness ya es un subtipo.</text>
+        <text x="346" y="452" class="sv-s">Generado con JSON.stringify desde schema.ts</text>
+
+        <!-- right -->
+        <rect x="690" y="30" width="220" height="78" rx="8" class="sv-node"/>
+        <text x="704" y="52" class="sv-t">Person</text>
+        <text x="704" y="70" class="sv-code">#mioara</text>
+        <text x="704" y="89" class="sv-s">name: Mioara · apellido y foto: D4</text>
+        <rect x="690" y="200" width="220" height="92" rx="8" class="sv-node"/>
+        <text x="704" y="222" class="sv-t">Service ×2 (vía Offer)</text>
+        <text x="704" y="242" class="sv-s">Limpieza entre huéspedes</text>
+        <text x="704" y="260" class="sv-s">Limpieza a fondo</text>
+        <text x="704" y="280" class="sv-s">con serviceType</text>
+        <rect x="690" y="370" width="220" height="100" rx="8" class="sv-node"/>
+        <text x="704" y="392" class="sv-t">areaServed · 20 lugares</text>
+        <text x="704" y="412" class="sv-s">City, Place y AdministrativeArea</text>
+        <text x="704" y="430" class="sv-s">Los del bloque "Zonas" + La Ribera</text>
+        <text x="704" y="448" class="sv-s">y Horta Sud. No los 40 pueblos.</text>
+      </svg>
+    </div>
+    <div class="legend">
+      <span><i class="lg-box key"></i> Nodo central</span>
+      <span><i class="lg-box"></i> Compartido entre idiomas (mismo <code>@id</code>)</span>
+      <span><i class="lg-box lang"></i> Propio de cada idioma</span>
+    </div>
+    <figcaption>El Rich Results Test pedirá <code>address</code> para "negocio local": es normal y no se añade una dirección para contentarlo. Lo que se marca tiene que verse en la página con el mismo texto (horario y teléfono incluidos).</figcaption>
+  </figure>
+
+  <figure>
+    <p class="fig-title">Presupuesto de rendimiento: con Astro estático se cumple sin esfuerzo especial</p>
+    <div class="tbl-wrap">
+      <table style="min-width:560px">
+        <thead><tr><th>Métrica o recurso</th><th>Objetivo</th><th>Nota</th></tr></thead>
+        <tbody>
+          <tr><td>LCP</td><td>≤ 2,5 s</td><td class="muted">Percentil 75 de usuarios reales</td></tr>
+          <tr><td>INP</td><td>≤ 200 ms</td><td class="muted">En laboratorio se mide TBT &lt; 200 ms</td></tr>
+          <tr><td>CLS</td><td>≤ 0,1</td><td class="muted">Imágenes con <code>width</code> y <code>height</code></td></tr>
+          <tr><td>JS de cliente</td><td>0 KB de framework</td><td class="muted">Sin islas; scripts aprobados &lt; 5 KB</td></tr>
+          <tr><td>CSS / fuentes</td><td>&lt; ~20 KB · ≤ 2 familias, 3 woff2</td><td class="muted">Autoalojadas: nada de fonts.googleapis.com</td></tr>
+          <tr><td>Peso total</td><td>&lt; ~500 KB</td><td class="muted">Lighthouse móvil ≥ 95 y SEO = 100</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figcaption>Una web nueva no tendrá datos de usuarios reales (CrUX) durante meses; mientras, Lighthouse o PageSpeed Insights.</figcaption>
+  </figure>
+</section>
+
+<!-- 6 -->
+<section class="band" id="geo" aria-labelledby="h-geo">
+  <div class="sec-head">
+    <span class="num">06</span>
+    <h2 id="h-geo">SEO frente a GEO/AEO</h2>
+    <p class="takeaway prose">Lo demostrado coincide con el SEO clásico; casi todo lo "específico para IA" está sin pruebas.</p>
+  </div>
+
+  <figure>
+    <div class="scale" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="evidence">
+      <div class="ev" style="--c: var(--ok)">
+        <div class="ev-h"><h3>Demostrado</h3><span>Documentado por la propia plataforma</span></div>
+        <ul>
+          <li><b>AI Overviews y Modo IA "siguen siendo SEO"</b><span>Guía de Google (15 mayo 2026): indexado y con fragmento. Sin llms.txt, sin trocear, sin marcado especial.</span><span class="do">El SEO de la sección 05 es el GEO para Google</span></li>
+          <li><b>Modo IA en España y en castellano</b><span>Desde octubre de 2025.</span></li>
+          <li><b>Cada empresa separa bots de búsqueda y de entrenamiento</b><span>OpenAI, Anthropic y Perplexity lo documentan.</span><span class="do">Permitir los de búsqueda</span></li>
+          <li><b>Google-Extended no toca la Búsqueda</b><span>Controla entrenamiento y grounding de Gemini, no AI Overviews.</span></li>
+          <li><b>Cloudflare bloquea bots de IA por defecto</b><span>En zonas nuevas desde julio de 2025.</span><span class="do">Revisar si hosting o DNS pasan por Cloudflare</span></li>
+          <li><b>Bing WMT mide citas en Copilot</b><span>Informe AI Performance desde febrero de 2026, sin clics; no cubre ChatGPT.</span></li>
+        </ul>
+      </div>
+      <div class="ev" style="--c: var(--mid)">
+        <div class="ev-h"><h3>Observado, no oficial</h3><span>Análisis y encuestas de terceros</span></div>
+        <ul>
+          <li><b>ChatGPT busca sobre resultados de Bing</b><span>Toma 20–30 y los reordena (Search Engine Land). No lee Bing Places directamente.</span><span class="do">Bing WMT y Bing Places justificados</span></li>
+          <li><b>La web del negocio es lo que más citan los LLM</b><span>Estudio de Insites sobre 10.000 negocios locales.</span></li>
+          <li><b>Uso de IA para recomendaciones locales: del 6 % al 45 %</b><span>Google sigue en el 71 %. Encuesta BrightLocal 2026 a consumidores de EE. UU. y Reino Unido; no son datos de España.</span></li>
+          <li><b>Factores de visibilidad en IA según expertos</b>
+            <div class="bars" role="img" aria-label="Encuesta Whitespark 2026: on-page unos 24 %, reseñas unos 16 %, citas unos 13 %">
+              <div class="barrow"><span>On-page</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v">~24 %</span></div>
+              <div class="barrow"><span>Reseñas</span><span class="track"><span class="fill" style="width:66.7%"></span></span><span class="v">~16 %</span></div>
+              <div class="barrow"><span>Citas</span><span class="track"><span class="fill" style="width:54.2%"></span></span><span class="v">~13 %</span></div>
+            </div>
+            <span>Whitespark 2026, 47 expertos: es opinión, no medición. El GBP pesa menos aquí que en el mapa.</span></li>
+        </ul>
+      </div>
+      <div class="ev" style="--c: var(--spec)">
+        <div class="ev-h"><h3>Especulativo</h3><span>Sin pruebas sólidas</span></div>
+        <ul>
+          <li><b>llms.txt</b><span>Según Ahrefs, el 97 % de los archivos no recibió ninguna petición en mayo de 2026. Ninguna plataforma grande confirma usarlo; Google dice que no hace falta.</span><span class="do">Opcional (P3), breve y factual</span></li>
+          <li><b>Contenido pregunta-respuesta "para ser citado"</b><span>Plausible; pruebas débiles y de proveedores.</span><span class="do">Mantener FAQ con la respuesta en la primera frase</span></li>
+          <li><b>Schema "para LLM"</b><span>Google: sin marcado especial. Otras plataformas: sin pruebas.</span><span class="do">Marcar por SEO clásico y coherencia de entidad</span></li>
+          <li><b>Foursquare como fuente de ChatGPT</b><span>Afirmación de proveedores, no confirmada por OpenAI.</span><span class="do">Opcional, no prioritario</span></li>
+          <li><b>Trocear o reescribir para IA</b><span>Google lo desaconseja.</span><span class="do">No hacer</span></li>
+        </ul>
+      </div>
+    </div>
+  </figure>
+
+  <figure>
+    <p class="fig-title">Política de bots: los de búsqueda nunca se bloquean; el entrenamiento lo decide Ysst (D5)</p>
+    <div class="tbl-wrap">
+      <table class="bots">
+        <thead><tr><th>Bot</th><th>Empresa</th><th>Para qué</th><th>Variante A (por defecto)</th><th>Variante B</th></tr></thead>
+        <tbody>
+          <tr><td>Googlebot</td><td>Google</td><td>Búsqueda, AI Overviews</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>Bingbot</td><td>Microsoft</td><td>Bing, Copilot y, por extensión, ChatGPT</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>OAI-SearchBot</td><td>OpenAI</td><td>Inclusión en la búsqueda de ChatGPT</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>Claude-SearchBot</td><td>Anthropic</td><td>Índice de búsqueda</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>Claude-User</td><td>Anthropic</td><td>Visitas que inicia un usuario</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>PerplexityBot</td><td>Perplexity</td><td>Índice (dicen que no entrena)</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>Applebot · DuckDuckBot</td><td>Apple · DuckDuckGo</td><td>Búsqueda</td><td class="yes">Permitir</td><td class="yes">Permitir siempre</td></tr>
+          <tr><td>GPTBot</td><td>OpenAI</td><td>Entrenamiento</td><td class="yes">Permitir</td><td class="blk">Bloquear</td></tr>
+          <tr><td>ClaudeBot</td><td>Anthropic</td><td>Entrenamiento</td><td class="yes">Permitir</td><td class="blk">Bloquear</td></tr>
+          <tr><td>Google-Extended</td><td>Google</td><td>Entrenamiento y grounding de Gemini</td><td class="yes">Permitir</td><td class="blk">Bloquear</td></tr>
+          <tr><td>CCBot</td><td>Common Crawl</td><td>Entrenamiento</td><td class="yes">Permitir</td><td class="blk">Bloquear</td></tr>
+          <tr><td>ChatGPT-User · Perplexity-User</td><td>OpenAI · Perplexity</td><td>Visitas de usuarios</td><td colspan="2" class="muted">No se comprometen a respetar robots.txt</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note-box"><b>Las dos variantes mantienen la visibilidad en buscadores de IA.</b> Para un negocio local, permitirlo todo no tiene coste real. No usar <code>anthropic-ai</code> ni <code>Claude-Web</code> (obsoletos). Con Cloudflare, el bloqueo de bots de IA y el "robots.txt gestionado" pueden sobrescribir esta política.</div>
+  </figure>
+</section>
+
+<!-- 7 -->
+<section class="band" id="decisiones" aria-labelledby="h-dec">
+  <div class="sec-head">
+    <span class="num">07</span>
+    <h2 id="h-dec">Decisiones pendientes de Ysst</h2>
+    <p class="prose muted">Las 13 de la investigación. La agrupación por momento es una lectura de este informe a partir de lo que toca cada decisión; la investigación no la fija. "Por defecto" es lo que el agente de construcción aplica mientras no decidas.</p>
+  </div>
+
+  <div class="dgroups">
+    <div class="dgroup">
+      <div class="dgroup-h"><h3>Afectan al diseño o al copy</h3><span class="tag now">Decidir antes de cerrar la fase 3</span></div>
+      <div class="dcards">
+        <article class="dcard">
+          <span class="id">D2</span><h3>Nombre en el GBP y como entidad</h3>
+          <ul><li>"Limpiezas Mioara"</li><li>"Mioara · Limpieza de apartamentos turísticos"</li></ul>
+          <p class="rec"><b>Recomendación:</b> "Limpiezas Mioara" en el GBP y en todas partes; la forma larga, como <code>alternateName</code>. Meter palabras clave en el nombre va contra las directrices de GBP.</p>
+          <p class="def">Afecta a la cabecera, el pie (NAP) y el logo.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D4</span><h3>Datos de Mioara</h3>
+          <ul><li>Solo nombre, o nombre y apellido</li><li>Foto real o no</li><li>Idiomas: ¿atiende en inglés?</li></ul>
+          <p class="rec"><b>Recomendación:</b> nombre y foto real si es posible; el idioma de atención en EN, a confirmar.</p>
+          <p class="def">Por defecto: solo "Mioara" y sin <code>knowsLanguage</code>. Afecta a "Sobre Mioara" y a la versión EN.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D10</span><h3>Propuestas de copy SEO</h3>
+          <ul><li>Acortar el title ES (~88 caracteres; se cortará)</li><li>Meta ES (~240 caracteres): dejar o recortar</li><li>"Valencia" sin tilde una vez y "changeover" en EN</li><li>"Airbnb/Booking" en el cuerpo visible</li><li>FAQ nuevas: Airbnb y Booking, mismo día, zonas</li></ul>
+          <p class="rec"><b>Recomendación:</b> ninguna; aceptar, rechazar o ajustar cada una.</p>
+          <p class="def">Por defecto: no aplicarlas. La FAQ de factura sigue pendiente del titular.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">Extra</span><h3>Pequeños añadidos de texto</h3>
+          <ul><li>Teléfono visible en el pie (refuerza el NAP)</li><li>Enlace "Ver reseñas en Google" cuando exista el GBP</li><li>Mostrar el horario (y marcarlo en el schema)</li></ul>
+          <p class="rec"><b>Recomendación:</b> la investigación propone mostrar el teléfono; el resto, a tu criterio.</p>
+          <p class="def">Por defecto: no añadir ninguno. No están numerados como D.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="dgroup">
+      <div class="dgroup-h"><h3>Se pueden dejar para la construcción</h3><span class="tag build">Fase 4</span></div>
+      <div class="dcards">
+        <article class="dcard">
+          <span class="id">D1</span><h3>Estructura de URL</h3>
+          <ol><li>ES en <code>/</code> y EN en <code>/en/</code></li><li><code>/es/</code> y <code>/en/</code>, con <code>/</code> redirigiendo</li></ol>
+          <p class="rec"><b>Recomendación:</b> (1). Más simple y sin redirecciones. Detección automática de idioma: desaconsejada.</p>
+          <p class="def">Por defecto: (1).</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D3</span><h3>Dirección en el schema</h3>
+          <ul><li>Sin <code>address</code></li><li>Solo municipio, provincia y país (revela el municipio de origen)</li></ul>
+          <p class="rec"><b>Recomendación:</b> sin <code>address</code>, salvo que se quiera reforzar Almussafes.</p>
+          <p class="def">Por defecto: sin <code>address</code>. Nunca inventar una calle.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D5</span><h3>Política de bots de IA</h3>
+          <ul><li>(a) Permitir todos</li><li>(b) Permitir búsqueda y bloquear entrenamiento (GPTBot, ClaudeBot, Google-Extended, CCBot)</li></ul>
+          <p class="rec"><b>Recomendación:</b> (a) o (b); las dos mantienen la visibilidad. (a) no tiene coste real para un negocio local.</p>
+          <p class="def">Por defecto: variante A.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D6</span><h3>llms.txt</h3>
+          <ul><li>Sí, breve</li><li>No</li></ul>
+          <p class="rec"><b>Recomendación:</b> indiferente; sí, si se quiere tenerlo cubierto. Cuesta unos 10 minutos.</p>
+          <p class="def">Por defecto: no crearlo.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D7</span><h3>Medición</h3>
+          <ol start="0"><li>Solo Search Console + Bing WMT</li><li>Analítica sin cookies (Cloudflare, Plausible, Umami, Vercel)</li><li>GA4 + Consent Mode v2 + CMP</li></ol>
+          <p class="rec"><b>Recomendación:</b> 0 en la v1; 1 con eventos si quieres contar clics en WhatsApp. Validar la parte legal con la gestoría o un abogado.</p>
+          <p class="def">Por defecto: ninguna. Ojo: la opción 2 obliga a un banner, y eso sí toca el diseño.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D8</span><h3>Hosting</h3>
+          <ul><li>Vercel</li><li>Netlify</li><li>Cloudflare Pages</li></ul>
+          <p class="rec"><b>Recomendación:</b> neutral en SEO. Con Cloudflare, revisar el bloqueo de bots de IA. En todos: previews con <code>noindex</code> y barra final con 301/308.</p>
+          <p class="def">Por defecto: no desplegar.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D11</span><h3>Páginas legales indexables</h3>
+          <ul><li>Indexables</li><li><code>noindex</code></li><li>¿Versión EN de los textos legales?</li></ul>
+          <p class="rec"><b>Recomendación:</b> indexables; el aviso legal con titular y NIF también da confianza.</p>
+          <p class="def">Por defecto: indexables; preguntar por la EN.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="dgroup">
+      <div class="dgroup-h"><h3>Publicación y después</h3><span class="tag pub">Bloquea publicar</span></div>
+      <div class="dcards">
+        <article class="dcard blocker">
+          <span class="id">D13</span><h3>Titular legal y fecha de publicación</h3>
+          <p class="small">Bloquea el GBP, el aviso legal, la política de privacidad, <code>legalName</code> y <code>taxID</code>. Mientras haya placeholders legales (<code>grep "{{" dist/</code> ≠ 0), la web no se publica.</p>
+          <p class="rec"><b>Enfoque acordado:</b> construirlo todo ahora y publicar cuando haya titular. Consultar con la gestoría.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D9</span><h3>Páginas de zona</h3>
+          <ul><li>No</li><li>2–3 más adelante (Cullera, costa de Sueca/El Perelló, València sur) con contenido real</li></ul>
+          <p class="rec"><b>Recomendación:</b> no en la v1. Páginas por pueblo en plantilla: riesgo de <em>doorway</em>.</p>
+        </article>
+        <article class="dcard">
+          <span class="id">D12</span><h3>Redes sociales del negocio</h3>
+          <ul><li>Ninguna</li><li>Instagram</li><li>Facebook</li></ul>
+          <p class="rec"><b>Recomendación:</b> opcional; sirven como <code>sameAs</code> y prueba social si se mantienen vivas.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="band" id="glosario" aria-labelledby="h-glo">
+  <div class="sec-head">
+    <span class="num">08</span>
+    <h2 id="h-glo">Glosario</h2>
+  </div>
+  <dl class="gloss">
+    <div><dt>SEO local</dt><dd>Aparecer en búsquedas con intención geográfica ("… Cullera") y en el mapa.</dd></div>
+    <div><dt>GBP (Google Business Profile)</dt><dd>La ficha de Google del negocio: mapa, reseñas, fotos, horario. Aquí, como negocio de área de servicio.</dd></div>
+    <div><dt>Negocio de área de servicio</dt><dd>Atiende en el domicilio del cliente; da una dirección para verificar pero no la muestra.</dd></div>
+    <div><dt>NAP</dt><dd>Name, Address, Phone. Aquí sin dirección: nombre, teléfono y zona idénticos en todas partes.</dd></div>
+    <div><dt>Cita (citation)</dt><dd>Mención del negocio con sus datos en un tercero: directorio, marketplace, red social.</dd></div>
+    <div><dt>hreflang</dt><dd>Etiqueta que dice a Google qué URL es la versión en cada idioma. Anota URLs, no secciones.</dd></div>
+    <div><dt>x-default</dt><dd>La URL para quien no encaja en ningún idioma declarado. Aquí, <code>/</code>.</dd></div>
+    <div><dt>Canonical</dt><dd>La URL "oficial" de una página, para evitar duplicados. Cada idioma apunta a sí mismo.</dd></div>
+    <div><dt>Schema / JSON-LD</dt><dd>Datos estructurados (vocabulario schema.org) en un bloque JSON que describe negocio, persona y FAQ.</dd></div>
+    <div><dt>sameAs</dt><dd>Propiedad del schema que enlaza la entidad con sus perfiles en otros sitios (GBP, Bing, redes).</dd></div>
+    <div><dt>Sitemap</dt><dd>Archivo XML con las URLs de la web para los buscadores.</dd></div>
+    <div><dt>robots.txt</dt><dd>Archivo que dice qué bots pueden rastrear la web.</dd></div>
+    <div><dt>IndexNow</dt><dd>Protocolo para avisar al momento de cambios a Bing, Yandex, Naver y otros. Google no participa.</dd></div>
+    <div><dt>Search Console · Bing WMT</dt><dd>Paneles gratuitos de Google y Bing: indexación, consultas reales, errores e informes de IA.</dd></div>
+    <div><dt>Core Web Vitals</dt><dd>Métricas de experiencia de Google: LCP (carga del elemento principal), INP (respuesta a la interacción), CLS (saltos de diseño).</dd></div>
+    <div><dt>GEO</dt><dd>Generative Engine Optimization: aparecer en respuestas de motores generativos (ChatGPT, Perplexity, AI Overviews).</dd></div>
+    <div><dt>AEO</dt><dd>Answer Engine Optimization: ser la respuesta que extrae un buscador o asistente.</dd></div>
+    <div><dt>AI Overviews · Modo IA</dt><dd>Resúmenes generados por IA en la búsqueda de Google y su modo conversacional.</dd></div>
+    <div><dt>llms.txt</dt><dd>Archivo propuesto para resumir una web a los LLM. Sin adopción confirmada por los grandes.</dd></div>
+    <div><dt>Doorway pages</dt><dd>Páginas casi idénticas creadas para captar búsquedas (p. ej., una por pueblo). Google las penaliza.</dd></div>
+    <div><dt>E-E-A-T</dt><dd>Experiencia, pericia, autoridad y confianza: lo que Google intenta valorar en un contenido.</dd></div>
+    <div><dt>Bots de búsqueda vs. de entrenamiento</dt><dd>Los primeros deciden si sales en respuestas; los segundos recogen datos para entrenar modelos.</dd></div>
+  </dl>
+</section>
+
+<!-- 9 -->
+<section class="band" id="fuentes" aria-labelledby="h-fue">
+  <div class="sec-head">
+    <span class="num">09</span>
+    <h2 id="h-fue">Fuentes principales</h2>
+    <p class="prose muted">Selección de la investigación. Las de GBP son secundarias: contrastar con la ayuda oficial al crear el perfil.</p>
+  </div>
+  <div class="sources">
+    <div><h3>Google</h3><ul>
+      <li><a href="https://developers.google.com/search/blog/2026/05/a-new-resource-for-optimizing" rel="noopener">Search Central: guía de optimización para IA (mayo 2026)</a></li>
+      <li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener">Funciones de IA y tu web</a></li>
+      <li><a href="https://developers.google.com/search/docs/essentials/spam-policies" rel="noopener">Políticas de spam</a></li>
+      <li><a href="https://developers.google.com/search/docs/appearance/structured-data/local-business" rel="noopener">Datos estructurados de negocio local</a></li>
+      <li><a href="https://www.searchenginejournal.com/google-drops-faq-rich-results/574429/" rel="noopener">SEJ: Google retira los resultados enriquecidos de FAQ</a></li>
+      <li><a href="https://ppc.land/google-finally-gives-search-console-its-own-generative-ai-visibility-reports/" rel="noopener">PPC Land: informes de IA en Search Console</a></li>
+    </ul></div>
+    <div><h3>Bing, IndexNow y Apple</h3><ul>
+      <li><a href="https://searchengineland.com/bing-webmaster-tools-testing-new-ai-performance-report-468039" rel="noopener">SEL: informe AI Performance de Bing</a></li>
+      <li><a href="https://ppc.land/bing-places-for-business-migrates-to-bing-com-domain-with-import-tools/" rel="noopener">PPC Land: Bing Places migra a bing.com</a></li>
+      <li><a href="https://www.indexnow.org/" rel="noopener">indexnow.org</a></li>
+      <li><a href="https://www.apple.com/pt/newsroom/2026/03/introducing-apple-business" rel="noopener">Apple Newsroom: Apple Business</a></li>
+      <li><a href="https://www.articulo14.es/sociedad/apple-business-llega-a-espana-como-funciona-y-que-servicios-ofrece-20260325.html" rel="noopener">Artículo14: Apple Business en España</a></li>
+    </ul></div>
+    <div><h3>Bots de IA</h3><ul>
+      <li><a href="https://developers.openai.com/api/docs/bots.md" rel="noopener">OpenAI: crawlers</a></li>
+      <li><a href="https://support.claude.com/en/articles/8896518-anthropic-crawlers" rel="noopener">Anthropic: crawlers</a></li>
+      <li><a href="https://docs.perplexity.ai/docs/resources/perplexity-crawlers.md" rel="noopener">Perplexity: crawlers</a></li>
+      <li><a href="https://ppc.land/google-extended/" rel="noopener">PPC Land: Google-Extended</a></li>
+      <li><a href="https://searchengineland.com/cloudflare-to-block-ai-crawlers-by-default-with-new-pay-per-crawl-initiative-457708" rel="noopener">SEL: Cloudflare bloquea bots de IA por defecto</a></li>
+    </ul></div>
+    <div><h3>GEO y SEO local</h3><ul>
+      <li><a href="https://searchengineland.com/how-does-chatgpt-conduct-local-searches-454894" rel="noopener">SEL: cómo hace ChatGPT las búsquedas locales</a></li>
+      <li><a href="https://insites.com/blog/what-ai-uses-to-choose-local-businesses-and-what-it-ignores/" rel="noopener">Insites: qué usa la IA para elegir negocios locales</a></li>
+      <li><a href="https://whitespark.ca/local-search-ranking-factors/" rel="noopener">Whitespark: factores de ranking local 2026</a></li>
+      <li><a href="https://news.designrush.com/ai-local-business-discovery-website-strategy" rel="noopener">DesignRush sobre BrightLocal 2026</a></li>
+      <li><a href="https://ppc.land/llms-txt-adoption-rises-8-8x-but-97-of-files-get-zero-ai-requests/" rel="noopener">PPC Land sobre Ahrefs: llms.txt</a></li>
+      <li><a href="https://www.searchenginejournal.com/google-says-llms-txt-is-purely-speculative-for-now/575026/" rel="noopener">SEJ: Google dice que llms.txt es especulativo</a></li>
+    </ul></div>
+    <div><h3>GBP y citas</h3><ul>
+      <li><a href="https://wiremo.co/blog/google-business-profile-video-verification/" rel="noopener">Wiremo: verificación por vídeo 2026</a></li>
+      <li><a href="https://www.sterlingsky.ca/google-business-profile-landing-pages/" rel="noopener">Sterling Sky: página de destino del GBP</a></li>
+      <li><a href="https://whitespark.ca/?p=9352" rel="noopener">Whitespark: páginas de área de servicio</a></li>
+      <li><a href="https://ahrefs.com/blog/es/local-citations" rel="noopener">Ahrefs: citas locales</a></li>
+      <li><a href="https://www.cronoshare.com/servicios/empresas-limpieza/valencia/cullera" rel="noopener">Cronoshare Cullera</a></li>
+    </ul></div>
+    <div><h3>Medición y RGPD</h3><ul>
+      <li><a href="https://www.aepd.es/guias/guia-cookies-analiticas-externas.pdf" rel="noopener">AEPD: cookies de medición de audiencia (PDF)</a></li>
+      <li><a href="https://www.iubenda.com/es/blog/understanding-the-spanish-dpa-guide-on-audience-measurement-cookies/" rel="noopener">iubenda: resumen de la guía de la AEPD</a></li>
+      <li class="muted">No se ha podido confirmar ninguna actualización de la AEPD de 2025–2026.</li>
+    </ul></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="end">Generado a partir de <code>research/seo-geo-aeo.md</code> y <code>docs/seo-instrucciones-build.md</code>. Sin cifras propias: todos los datos vienen de esas fuentes.</footer>
+</div>
+
+<script>
+(function () {
+  var A = [
+    [1,"P0","Fijar <b>un único nombre de entidad</b> y usarlo igual en web, GBP, Bing, Apple, WhatsApp Business y directorios (propuesta: \"Limpiezas Mioara\"; el descriptor va aparte)","Coherencia de entidad para Google y los LLM. Las directrices de GBP prohíben meter palabras clave en el nombre si no es el nombre real","Bajo","b","Antes","antes","Parcial (el nombre legal puede diferir)","parcial"],
+    [2,"P0","Fijar <b>un único teléfono</b> (el de WhatsApp) como teléfono público en todas partes","La coherencia del NAP es una de las señales de cita más citadas en SEO local","Bajo","b","Antes","antes","No","no"],
+    [3,"P0","Estructura de URL: <code>/</code> (ES) y <code>/en/</code> (EN), canonical propio, hreflang <code>es</code>, <code>en</code> y <code>x-default</code>","Google necesita una URL por idioma; el hreflang tiene que ser recíproco","Bajo","b","Durante","durante","No","no"],
+    [4,"P0","HTML estático e indexable: un H1, H2 por sección, title y meta por idioma, todo el texto en el HTML","Requisito para aparecer en Google y en las funciones de IA, según Google","Bajo","b","Durante","durante","No","no"],
+    [5,"P0","JSON-LD <code>@graph</code>: WebSite, LocalBusiness (sin dirección, con areaServed), Person, WebPage y FAQPage por idioma","Desambigua la entidad y conecta la web con el GBP mediante sameAs y hasMap","Medio","m","Durante (datos legales, después)","durante","Sí (legalName, taxID)","si"],
+    [6,"P0","<code>robots.txt</code> abierto con el sitemap; <code>@astrojs/sitemap</code> con i18n; previews del hosting con <code>noindex</code>","Indexación limpia y sin duplicados de *.vercel.app, *.netlify.app o *.pages.dev","Bajo","b","Durante","durante","No","no"],
+    [7,"P0","Crear y verificar el <b>GBP</b> como negocio de área de servicio (sin dirección pública), con las áreas validadas y enlace a la web","Principal fuente de visibilidad en el mapa y en las búsquedas de marca","Medio-alto (verificación por vídeo)","ma","Después","despues","Sí","si"],
+    [8,"P0","Search Console (propiedad de dominio por DNS) y envío de <code>sitemap-index.xml</code>","Indexación, consultas reales y errores; desde 2026 con informe de impresiones en IA","Bajo","b","Después","despues","No (sí la publicación)","no"],
+    [9,"P0","Conseguir las <b>primeras reseñas reales</b> en el GBP (sin incentivos ni filtros)","Pesan en el mapa y, según Whitespark 2026, son el segundo factor en visibilidad en IA","Continuo","c","Después","despues","Sí","si"],
+    [10,"P1","Bing Webmaster Tools (importar desde Search Console) y su informe de rendimiento en IA","ChatGPT y Copilot se apoyan en el índice de Bing","Bajo","b","Después","despues","No","no"],
+    [11,"P1","Política de bots de IA en robots.txt: permitir los de <b>búsqueda</b> y comprobar que el hosting o CDN no los bloquea (Cloudflare)","Si se bloquean, la web no sale en ChatGPT, Claude o Perplexity","Bajo","b","Durante","durante","No","no"],
+    [12,"P1","Presupuesto de rendimiento: 0 KB de JS de framework, <code>astro:assets</code>, fuentes autoalojadas; LCP &lt; 2,5 s, CLS &lt; 0,1, INP &lt; 200 ms","Core Web Vitals y experiencia móvil (visita típica: 30 s desde el móvil)","Medio","m","Durante","durante","No","no"],
+    [13,"P1","Bing Places (importar el GBP verificado) y Apple Business (comprobar si admite negocios sin dirección)","Bing Places alimenta a Bing y Copilot (y de forma indirecta a ChatGPT); Apple, a Apple Maps y Siri","Bajo","b","Después","despues","Sí (vía GBP)","si"],
+    [14,"P1","Citas coherentes: WhatsApp Business, Cronoshare, Habitissimo, Páginas Amarillas, QDQ y, si quieres, Facebook o Instagram","Menciones en terceros para Google y los LLM; Cronoshare y Habitissimo pueden traer clientes","Medio","m","Después","despues","Sí (algunos piden datos fiscales)","si"],
+    [15,"P1","Elegir el sistema de medición y reflejarlo en la política de privacidad","Condiciona si hace falta banner y el texto legal","Bajo","b","Antes de publicar","prepub","Sí (la política necesita el titular)","si"],
+    [16,"P1","Fotos reales de Mioara y de trabajos hechos (con permiso del anfitrión)","Confianza, GBP (ayudan a verificar y a convertir) y señales E-E-A-T","Medio","m","Antes","antes","No","no"],
+    [17,"P2","IndexNow (archivo de clave y envío tras cada despliegue)","Indexación casi inmediata en Bing, Yandex y otros; no afecta a Google","Bajo","b","Durante y después","durante","No","no"],
+    [18,"P2","Propuestas de copy (§4.4): title y meta, \"Airbnb/Booking\" en el texto, \"changeover\" en EN, 2–3 FAQ","Encaje con las búsquedas y la extracción de respuestas","Bajo","b","Antes","antes","No","no"],
+    [19,"P2","Enlaces locales realistas: portafolio de Ysst, gestores de viviendas turísticas, asociaciones de la Comunitat Valenciana","Autoridad local sin comprar enlaces","Medio, continuo","m","Después","despues","No","no"],
+    [20,"P2","Revisar cada mes a mano la página de resultados de marca y las respuestas de ChatGPT, Perplexity y Gemini a 3–4 preguntas fijas","No hay herramientas fiables y gratuitas para medir la visibilidad en LLM","Bajo","b","Después","despues","No","no"],
+    [21,"P3","<code>llms.txt</code> breve y factual (opcional)","Sin pruebas de efecto; cuesta 10 minutos","Muy bajo","mb","Durante","durante","No","no"],
+    [22,"P3","Páginas de zona (2–3 como máximo) <b>solo</b> cuando haya contenido real por zona","Pueden captar \"pueblo + servicio\"; en plantilla, riesgo de doorway pages","Alto","a","Después (más de 3–6 meses)","despues","No","no"]
+  ];
+  var MOM = { antes: "Antes", durante: "Durante", prepub: "Antes de publicar", despues: "Después" };
+  var COLS = [["mb","Muy bajo"],["b","Bajo"],["m","Medio"],["ma","Medio-alto"],["a","Alto"],["c","Continuo"]];
+  var PRI = ["P0","P1","P2","P3"];
+
+  // Matrix
+  var mx = document.getElementById("matrix");
+  var h = '<div class="hd" role="columnheader"><span class="sr">Prioridad / esfuerzo</span></div>';
+  COLS.forEach(function (c) { h += '<div class="hd" role="columnheader">' + c[1] + '</div>'; });
+  PRI.forEach(function (p) {
+    h += '<div class="rh" role="rowheader">' + p + '</div>';
+    COLS.forEach(function (c) {
+      var items = A.filter(function (a) { return a[1] === p && a[5] === c[0]; });
+      var hot = (p === "P0" && (c[0] === "b" || c[0] === "mb")) ? " hot" : "";
+      h += '<div class="cell' + hot + '" role="gridcell">';
+      items.forEach(function (a) {
+        var t = a[9] === "no" ? "" : " t-" + a[9];
+        h += '<button type="button" class="chip m-' + a[7] + t + '" data-n="' + a[0] + '" title="#' + a[0] + ' · ' + a[2].replace(/<[^>]+>/g, "").replace(/"/g, "'") + '" aria-label="Accionable ' + a[0] + '">' + a[0] + '</button>';
+      });
+      h += '</div>';
+    });
+  });
+  mx.innerHTML = h;
+
+  // Timeline
+  var lanes = [
+    ["antes", "Antes de construir", "Decisiones y recursos", "var(--m-antes)"],
+    ["durante", "Durante la construcción", "Astro + Tailwind", "var(--m-durante)"],
+    ["prepub", "Antes de publicar", "Puerta legal", "var(--m-prepub)"],
+    ["despues", "Después de publicar", "Continuo", "var(--m-despues)"]
+  ];
+  var short = {
+    1:"Un único nombre de entidad",2:"Un único teléfono (WhatsApp)",16:"Fotos reales de Mioara",18:"Propuestas de copy SEO",
+    3:"URLs /, /en/, canonical y hreflang",4:"HTML estático, H1/H2, title y meta",5:"JSON-LD @graph (sin datos legales)",6:"robots.txt, sitemap, previews noindex",11:"Política de bots de IA",12:"Presupuesto de rendimiento",17:"IndexNow (clave + script)",21:"llms.txt (opcional)",
+    15:"Medición + política de privacidad",
+    8:"Search Console + sitemap",10:"Bing Webmaster Tools",7:"Crear y verificar el GBP",13:"Bing Places y Apple Business",9:"Primeras reseñas reales",14:"Citas coherentes",19:"Enlaces locales",20:"Revisión mensual de marca e IA",22:"Páginas de zona (+3–6 meses)"
+  };
+  var order = { antes:[1,2,16,18], durante:[3,4,5,6,11,12,17,21], prepub:[15], despues:[8,10,7,13,9,14,19,20,22] };
+  var tl = "";
+  lanes.forEach(function (l) {
+    tl += '<div class="lane" style="--c:' + l[3] + '"><div><h3>' + l[1] + '</h3><span class="when">' + l[2] + '</span></div><ul>';
+    if (l[0] === "antes") tl += '<li class="seq"><span class="no">D</span><span>Decisiones D2, D4 y D10</span></li>';
+    order[l[0]].forEach(function (n) {
+      var a = A[n - 1];
+      var mark = a[9] === "no" ? "" : ' <span class="pill tsi">titular</span>';
+      tl += '<li><span class="no">' + n + '</span><span>' + short[n] + mark + '</span></li>';
+    });
+    if (l[0] === "prepub") {
+      tl += '<li class="gate"><span><b>Titular legal (D13)</b>: nombre y NIF para aviso legal, privacidad, <code>legalName</code> y <code>taxID</code>.</span></li>';
+      tl += '<li class="seq"><span class="no">✓</span><span><code>grep "{{" dist/</code> = 0 y validadores sin errores</span></li>';
+      tl += '<li class="seq"><span class="no">D</span><span>Hosting (D8) y dominio confirmado</span></li>';
+    }
+    tl += '</ul></div>';
+  });
+  document.getElementById("timeline").innerHTML = tl;
+
+  // Table
+  var tb = document.getElementById("tbody");
+  tb.innerHTML = A.map(function (a) {
+    var tcls = a[9] === "no" ? "tno" : "tsi";
+    return '<tr id="a' + a[0] + '" data-p="' + a[1] + '" data-mom="' + a[7] + '" data-tit="' + (a[9] === "no" ? "no" : "dep") + '">' +
+      '<td class="n">' + a[0] + '</td>' +
+      '<td><span class="pill ' + a[1].toLowerCase() + '">' + a[1] + '</span></td>' +
+      '<td>' + a[2] + '</td>' +
+      '<td class="why">' + a[3] + '</td>' +
+      '<td>' + a[4] + '</td>' +
+      '<td><span class="mom"><i class="m-' + a[7] + '"></i>' + a[6] + '</span></td>' +
+      '<td><span class="pill ' + tcls + '">' + a[8] + '</span></td></tr>';
+  }).join("");
+
+  var state = { mom: "all", p: "all", tit: "all" };
+  function apply() {
+    var shown = 0;
+    Array.prototype.forEach.call(tb.rows, function (r) {
+      var ok = (state.mom === "all" || r.dataset.mom === state.mom) &&
+               (state.p === "all" || r.dataset.p === state.p) &&
+               (state.tit === "all" || r.dataset.tit === state.tit);
+      r.hidden = !ok; if (ok) shown++;
+    });
+    Array.prototype.forEach.call(mx.querySelectorAll(".chip"), function (c) {
+      var r = document.getElementById("a" + c.dataset.n);
+      c.classList.toggle("dim", r.hidden);
+    });
+    document.getElementById("count").textContent = "Mostrando " + shown + " de " + A.length + " accionables";
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".fgroup"), function (g) {
+    g.addEventListener("click", function (e) {
+      var b = e.target.closest(".fbtn"); if (!b) return;
+      state[g.dataset.key] = b.dataset.v;
+      Array.prototype.forEach.call(g.querySelectorAll(".fbtn"), function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      apply();
+    });
+  });
+  mx.addEventListener("click", function (e) {
+    var c = e.target.closest(".chip"); if (!c) return;
+    var r = document.getElementById("a" + c.dataset.n);
+    if (r.hidden) {
+      state = { mom: "all", p: "all", tit: "all" };
+      Array.prototype.forEach.call(document.querySelectorAll(".fbtn"), function (x) { x.setAttribute("aria-pressed", x.dataset.v === "all" ? "true" : "false"); });
+      apply();
+    }
+    r.scrollIntoView({ block: "center" });
+    r.classList.add("flash");
+    setTimeout(function () { r.classList.remove("flash"); }, 1600);
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
