@@ -86,13 +86,13 @@ Ysst capta anfitriones escribiéndoles por mensajería de Airbnb con el método 
    * Preguntas frecuentes.
    * Contacto.
 3. Diseño ✅ Elegido: dirección A «Cuaderno cercano». Referencia visual en `design/referencia.html` e instrucciones en `design/HANDOFF.md`.
-4. Construcción ✅ v1 hecha (Astro 7 + Tailwind 4, `/` y `/en/`, Lighthouse 100). Pendientes: WhatsApp, dominio, páginas legales, favicon, campos JSON-LD; ver `README.md`.
+4. Construcción ✅ v1 hecha (Astro 7 + Tailwind 4, `/` y `/en/`, Lighthouse 100). Pendientes: dominio, páginas legales, favicon, campos JSON-LD; ver `README.md`.
 5. Google Business: negocio de área de servicio sin dirección pública, categorías, fotos, verificación (normalmente por vídeo) y primeras reseñas.
 
 ## Pendiente de decidir (consultar a Ysst)
 * ~~Stack~~ → Decidido: **Astro + Tailwind** (estático, i18n ES/EN).
-* Hosting y despliegue.
-* Número de WhatsApp (mensaje prellenado ya decidido, en `src/config.ts`).
+* ~~Hosting~~ → Decidido: Vercel (ya creado por Ysst). Dominio pendiente.
+* ~~Número de WhatsApp~~ → Decidido: 642 824 775 (`src/config.ts`), con mensaje prellenado por idioma.
 * ~~Fotos~~ → Decidido: fotos reales en `src/assets/` (hero: cama hecha; retrato de Mioara en terraza, Ysst lo da por bueno).
 * Medición: Consent Mode, GTM o nada en la v1.
 * ~~Idiomas~~ → Decidido: castellano e inglés. Copy en `copy/es.md` y `copy/en.md`.

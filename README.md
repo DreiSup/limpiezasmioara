@@ -24,7 +24,7 @@ Requiere Node ≥ 22.12.
 
 | Qué | Dónde | Cómo cambiarlo |
 |---|---|---|
-| Número de WhatsApp (`34XXXXXXXXX`) | `src/config.ts` → `WHATSAPP_NUMBER` | Pon el número sin `+` ni espacios. Todos los enlaces wa.me salen de ahí. |
+| Número de WhatsApp (✅ `34642824775`) | `src/config.ts` → `WHATSAPP_NUMBER` | Formato sin `+` ni espacios. Todos los enlaces wa.me salen de ahí. |
 | Dominio | `astro.config.mjs` → `SITE` | Canonical, hreflang, sitemap, robots.txt y JSON-LD se derivan de ahí. |
 | Fotos (hero y retrato) | `src/assets/` | Sustituye `cama-hecha-toallas.webp` (4:3) o `mioara-retrato.jpg` (4:5) por otra foto con el mismo nombre y proporción. Astro genera AVIF/WebP/JPG en varios tamaños. Alt en `src/i18n/`. |
 | Aviso legal y Política de privacidad | Enlaces en `src/i18n/*.ts` (`footer.legal`) | Las páginas no existen todavía: crear `src/pages/aviso-legal.astro`, `politica-de-privacidad.astro` y sus versiones en `src/pages/en/` cuando haya titular (nombre y NIF). |
