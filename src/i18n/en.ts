@@ -32,9 +32,7 @@ export const en: Dict = {
     leadWavy: 'No need for you to be there.',
     note: "You'll talk to me directly, Mioara. No commitment. Limited spots.",
     photo: {
-      label: 'Photo placeholder: made bed with folded towels',
-      title: 'PHOTO · Made bed + towels',
-      spec: '4:3 · 1200×900 (2400×1800 @2x) · natural light, close-up',
+      alt: 'Holiday rental bedroom ready for the next guest: made bed with white linen and folded towels',
     },
   },
   services: {
@@ -74,9 +72,7 @@ export const en: Dict = {
     p1Mark: "I'm reliable and people trust me.",
     p2: 'I live in la Ribera and know the area well. I treat your apartment like my own home: clean, checked and ready for a 5-star review.',
     photo: {
-      label: 'Photo placeholder: portrait of Mioara',
-      title: 'PORTRAIT · Mioara',
-      spec: '4:5 · 1080×1350 · natural smile, at home, window light',
+      alt: 'Portrait of Mioara smiling',
     },
   },
   zones: {

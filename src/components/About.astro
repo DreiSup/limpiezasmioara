@@ -1,7 +1,8 @@
 ---
 import type { Dict } from '../i18n';
 import Polaroid from './Polaroid.astro';
-import PhotoPlaceholder from './PhotoPlaceholder.astro';
+import { Picture } from 'astro:assets';
+import foto from '../assets/mioara-retrato.jpg';
 import Tape from './Tape.astro';
 import Twinkle from './Twinkle.astro';
 
@@ -15,7 +16,7 @@ const a = t.about;
   <div class="wrap about">
     <div class="about-photo reveal">
       <Polaroid class="pb-[50px] [transform:rotate(-2.5deg)]">
-        <PhotoPlaceholder label={a.photo.label} title={a.photo.title} spec={a.photo.spec} class="aspect-[4/5] p-[14px]" />
+        <Picture src={foto} formats={['avif', 'webp']} fallbackFormat="jpg" widths={[500, 800, 1080, 1600]} sizes="(min-width: 1024px) 420px, 78vw" alt={a.photo.alt} class="block w-full h-auto aspect-[4/5] object-cover" />
       </Polaroid>
       <Tape class="top-[-12px] left-1/2 w-[96px] [transform:translateX(-50%)_rotate(3deg)]" />
       <Twinkle class="absolute bottom-[30px] left-[-22px] [animation-delay:1.2s] text-pen" />

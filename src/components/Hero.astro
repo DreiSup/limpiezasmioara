@@ -2,7 +2,8 @@
 import type { Dict } from '../i18n';
 import WhatsAppButton from './WhatsAppButton.astro';
 import Polaroid from './Polaroid.astro';
-import PhotoPlaceholder from './PhotoPlaceholder.astro';
+import { Picture } from 'astro:assets';
+import foto from '../assets/cama-hecha-toallas.webp';
 import Tape from './Tape.astro';
 import Twinkle from './Twinkle.astro';
 
@@ -27,7 +28,7 @@ const h = t.hero;
     </div>
     <div class="pol-wrap">
       <Polaroid class="drop [transform:rotate(2.5deg)]">
-        <PhotoPlaceholder label={h.photo.label} title={h.photo.title} spec={h.photo.spec} class="aspect-[4/3]" />
+        <Picture src={foto} formats={['avif', 'webp']} fallbackFormat="jpg" widths={[600, 900, 1200, 1448]} sizes="(min-width: 1024px) 460px, 84vw" alt={h.photo.alt} class="block w-full h-auto aspect-[4/3] object-cover" priority />
       </Polaroid>
       <Tape class="top-[-12px] left-1/2 w-[104px] [transform:translateX(-50%)_rotate(-4deg)]" />
       <Twinkle class="absolute top-[-22px] right-[-14px] text-pen" />

@@ -32,9 +32,7 @@ export const es = {
     leadWavy: 'Tú no tienes que pasar por allí.',
     note: 'Te respondo yo, Mioara. Sin compromiso. Plazas limitadas.',
     photo: {
-      label: 'Marcador de foto: cama hecha con toallas dobladas',
-      title: 'FOTO · Cama hecha + toallas',
-      spec: '4:3 · 1200×900 (2400×1800 @2x) · luz natural, de cerca',
+      alt: 'Dormitorio de un apartamento turístico listo para el próximo huésped: cama hecha con sábanas blancas y toallas dobladas',
     },
   },
   services: {
@@ -77,9 +75,7 @@ export const es = {
     p1Mark: 'soy constante y que confían en mí.',
     p2: 'Vivo en la Ribera y conozco la zona. Trato tu piso como si fuera mi casa: lo dejo limpio, revisado y listo para que tu huésped te deje 5 estrellas.',
     photo: {
-      label: 'Marcador de foto: retrato de Mioara',
-      title: 'RETRATO · Mioara',
-      spec: '4:5 · 1080×1350 · sonrisa natural, en casa, luz de ventana',
+      alt: 'Retrato de Mioara sonriendo',
     },
   },
   zones: {
